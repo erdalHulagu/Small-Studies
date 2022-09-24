@@ -1,18 +1,35 @@
 package com.tpe.service;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.tpe.domain.Message;
 import com.tpe.repository.Repository;
 
 @Component
+//@Scope("singleton")//default scope singleton
+@Scope("prototype")  //new object for each request
 @Qualifier("mailService")//
 public class MailService implements MessageService {
 	
 	//Field injection
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("Initializing");
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("Destroying");
+	}
+	
 	
 	@Autowired//otomatik olarak baðla
 	@Qualifier("fileRepository")
