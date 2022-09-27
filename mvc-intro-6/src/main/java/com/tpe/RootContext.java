@@ -12,6 +12,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
+//Configuration için
 @Configuration
 @PropertySource("classpath:db.properties")
 public class RootContext {

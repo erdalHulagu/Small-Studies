@@ -1,6 +1,7 @@
 package com.tpe.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -28,13 +29,16 @@ public class StudentRepositoryImpl implements StudentRepository  {
 	}
 
 	@Override
-	public Student findById(Long id) {
+	public Optional<Student> findById(Long id) {
 		Session session= sessionFactory.openSession();
 		Transaction tx= session.beginTransaction();
 		Student student= session.get(Student.class, id);
+		
+		Optional<Student> opt=null;
+		opt=Optional.ofNullable(student);
 		tx.commit();
 		session.close();
-		return student;
+		return opt;
 	}
 
 	@Override

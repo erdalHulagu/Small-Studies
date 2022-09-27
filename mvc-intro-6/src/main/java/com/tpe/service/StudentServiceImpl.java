@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.tpe.domain.Student;
+import com.tpe.exception.ResourceNotFoundException;
 import com.tpe.repository.StudentRepository;
 
 @Service
@@ -21,7 +22,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Student findStudentById(Long id) {
-		return studentRepository.findById(id);
+		return studentRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Student not found with id:"+id));
 	}
 
 	@Override

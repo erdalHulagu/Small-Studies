@@ -24,7 +24,7 @@ public class Student {
 	@NotEmpty(message="Last Name can't be null")
 	private String lastName;
 	
-   @NotNull(message="Grade can't be null")
+    @NotNull(message="Grade can't be null")
 	private Integer grade;
 	
 	private LocalDateTime createDate=LocalDateTime.now();

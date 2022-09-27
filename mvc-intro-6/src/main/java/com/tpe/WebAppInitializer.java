@@ -1,5 +1,7 @@
 package com.tpe;
 
+import javax.servlet.ServletRegistration.Dynamic;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -26,4 +28,10 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 				"/"
 		};
 	}
+	
+	@Override
+	protected void customizeRegistration(Dynamic registration) {
+		registration.setInitParameter("throwExceptionIfNoHandlerFound", "true");
+	}
+	
 }
