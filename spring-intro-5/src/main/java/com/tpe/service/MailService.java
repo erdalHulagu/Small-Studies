@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
 import com.tpe.domain.Message;
 import com.tpe.repository.Repository;
 
-@Component
+@Component("mailService")
 //@Scope("singleton")//default scope singleton
 @Scope("prototype")  //new object for each request
-@Qualifier("mailService")//
+
 public class MailService implements MessageService {
 	
 	//Field injection
@@ -31,7 +31,7 @@ public class MailService implements MessageService {
 	}
 	
 	
-	@Autowired//otomatik olarak baðla
+	@Autowired//otomatik olarak baï¿½la
 	@Qualifier("fileRepository")
 	private Repository repository; 
 	

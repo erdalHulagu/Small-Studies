@@ -7,9 +7,8 @@ import org.springframework.stereotype.Component;
 import com.tpe.domain.Message;
 import com.tpe.repository.Repository;
 
-//componentscan ile @Component annotationýna sahip sýnýf bulunur ve SpringIOC Container'ýn bu sýnýftan bir Bean oluþturur.
-@Component 
-@Qualifier("smsService")
+//componentscan ile @Component annotationï¿½na sahip sÄ±nÄ±f  bulunur ve SpringIOC Container' bu sÄ±nÄ±ftan bir Bean oluÅŸturur.
+@Component("smsService")
 public class SMSService implements MessageService {
 
 	@Autowired

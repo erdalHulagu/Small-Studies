@@ -9,12 +9,11 @@ import com.tpe.domain.Message;
 import com.tpe.repository.Repository;
 import com.tpe.thirdParty.ThirdPartyRepository;
 
-@Component
-@Qualifier("whatsAppService")
+@Component("whatsAppService")
 public class WhatsAppService implements MessageService {
 
 	
-	//Eðer bir adet constructorýnýz var ise @Autowired kullanmanýza gerek yok
+	//EÄŸer bir adet constructorÄ±nÄ±z var ise @Autowired kullanmanÄ±za gerek yok
 //	public WhatsAppService() {
 //		// TODO Auto-generated constructor stub
 //	}
