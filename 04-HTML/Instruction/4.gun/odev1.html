@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+Ödev:
+Toplam 7sutun,7satır
+a.İlk satırdaki ilk hücre yatayda 7lik yer kaplıyor.(colspan)
+b.İkinci satırdaki ikinci hücre var ama içi boş.
+c.Üçüncü satırdaki ilk hücre dikeyde 5lik yer kaplıyor(rowspan)
+d.Beşinci satırdaki ikinci hücre yatayda 6lık yer kaplıyor.(colspan)
+
+--İlk tr'nin içinde 1 tane td olacak ve colspan= "7" diyeceğiz.
+--İkinci tr'nin içinde 7 tane td olacak ikinci td boş olacak.
+--Üçüncü tr'nin içinde 7 tane td olacak ama ilk td'ye rowspan= "5" diyeceğiz.
+--Bundan sonraki tr'lerin içinde 6 td olacak(üstteki 5lik kapladığı için)
+--Dördüncü  tr'de 6 td olacak.
+--Beşinci  tr'nin içinde 1 tane td olacak ve colspan="6"diyeceğiz.
+--Altıncı ve yedinci tr'nin içinde 6 td olacak.
+
+
+     -->
+
+    <table border="1" align="center">
+      <tr>
+        <th colspan="7" align="center">Zaman Çizelgesi</th>
+      </tr>
+
+      <tr>
+        <td>Günler</td>
+        <td></td>
+        <td>Pazartesi</td>
+        <td>Salı</td>
+        <td>Çarş</td>
+        <td>Perş</td>
+        <td>Cuma</td>
+      </tr>
+
+      <tr>
+        <td rowspan="5" align="center">Saatler</td>
+        <td>1</td>
+        <td>Türkçe</td>
+        <td>Mat</td>
+        <td>Fen</td>
+        <td>Mat</td>
+        <td>Türkçe</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Türkçe</td>
+        <td>Mat</td>
+        <td>Fen</td>
+        <td>Mat</td>
+        <td>Fen</td>
+      </tr>
+
+      <tr>
+        <td colspan="6" align="center">Dinlenme</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Beden</td>
+        <td>Mat</td>
+        <td>Fen</td>
+        <td>Mat</td>
+        <td>Fen</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Sosyal</td>
+        <td>Mat</td>
+        <td>Fen</td>
+        <td>Mat</td>
+        <td>Fen</td>
+      </tr>
+    </table>
+  </body>
+</html>
