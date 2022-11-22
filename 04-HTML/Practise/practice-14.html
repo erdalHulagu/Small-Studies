@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Techproed Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="">
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="surname">Surname</label><br>
+            <input type="text" name="surname" id="surname" placeholder="Enter your surname">
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="abc@techproed.com">
+        </div>
+        <div>
+            <p>
+                Which option best describes your current role?
+            </p>
+            <select name="role" id="role">
+                <option disabled selected>Select A Role</option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+            </select>
+        </div>
+        <div>
+            <p>Would you recommend Techproeducation to a friend ?</p>
+            <input type="radio" name="recommend" id="yes"><label for="yes">Definitely, Yes</label>
+            <input type="radio" name="recommend" id="maybe"><label for="maybe">Maybe</label>
+            <input type="radio" name="recommend" id="notsure"><label for="notsure">Not sure</label>
+            <input type="radio" name="recommend" id="no"><label for="no">Definitely, No</label>
+        </div>
+        <div>
+           <p>Would you recommend Techproeducation to a friend?</p>
+            
+        </div>
+        <div>
+            <p>Any comments or suggestions ?</p>
+            <textarea type="text" name="comment" id="comment" rows="7" cols="40"></textarea>
+        </div>
+        <div><button type="submit">Submit</button></div>
+    </form>
+</body>
+</html>
