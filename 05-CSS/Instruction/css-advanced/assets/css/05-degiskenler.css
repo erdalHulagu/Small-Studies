@@ -1,0 +1,17 @@
+:root{
+    --color1: rgb(6, 97, 35);
+    --color2: blue;
+    --color3: rgba(6, 97, 35, 0.496);
+    --color4: rgba(0, 0, 255, 0.482);
+}
+
+
+
+.baslik{
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+.about{
+    color: var(--color4);
+}
