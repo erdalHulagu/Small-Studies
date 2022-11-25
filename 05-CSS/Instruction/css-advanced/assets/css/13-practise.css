@@ -1,0 +1,20 @@
+.btn-mode:hover + .content{
+    background-color: black;
+    color: white;
+}
+
+.chk-mode{
+    display: none;
+}
+
+.chk-mode:checked + .content{
+    background-color: black;
+    color: white;
+}
+
+.lbl-mode{
+    background-color: aquamarine;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
