@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu-container{
+            width:250px;
+            
+        }
+        .menu-container div{
+            text-align:center;
+            padding:0.8rem;
+            margin-bottom:2px;
+            background-color: brown;
+        }
+        .menu-container .active{
+            background-color: blue;
+        }
+        .menu-container a{
+            color:white;
+            font-size:1.3rem;
+            text-decoration: none;
+            width:100%;
+            height:100;
+            
+        }
+        .menu-container div:hover a{
+            color:yellow;   
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="menu-container">
+        <div class="active">
+            <a href="#">Ana Sayfa</a>
+        </div>
+        <div><a href="#">Hakkımızda</a></div>
+        <div><a href="#">Kadromuz</a></div>
+        <div><a href="#">Projeler</a></div>
+        <div><a href="#">İletişim</a></div>
+    </nav>
+</body>
+</html>

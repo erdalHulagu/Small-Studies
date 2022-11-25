@@ -1,0 +1,40 @@
+body{
+    background-image: url("../img/resim2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1{
+   font-style: italic; 
+}
+.menu{
+    background-color: aqua;
+    padding:.8rem;
+}
+.menu a{
+    text-decoration: none;
+    font-size:1.1rem;
+    margin-right: 1rem;
+}
+.menu a:hover{
+    color:brown;
+}
+.icerik{
+    background-color: antiquewhite;
+}
+.icerik p{
+    padding:1rem;
+}
+.tablo h2{
+    font-style: italic;
+}
+.tablo table{
+    background-color: beige;
+    width:30%;
+}
+table,th,td{
+    border :1px solid black;
+    border-collapse: collapse;
+}
