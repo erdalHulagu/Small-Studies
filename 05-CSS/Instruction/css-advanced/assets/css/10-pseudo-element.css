@@ -27,6 +27,7 @@
 .about span::before{
     content: "◀";
     color: chartreuse;
+    
 }
 
 .about span::after{
