@@ -18,3 +18,18 @@
     color: blue;
     font-size: 3rem;
 }
+
+
+.about span{
+    color: blue;
+}
+
+.about span::before{
+    content: "◀";
+    color: chartreuse;
+}
+
+.about span::after{
+    content: "▶";
+    color: chartreuse;
+}
