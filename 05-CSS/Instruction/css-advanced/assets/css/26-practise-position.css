@@ -18,10 +18,8 @@
 .input-group1 i{
     position: absolute;
     right:10px;
-    top:5px;
-    /* kesin bir top değeri yamak yerine
-        top:50% daha iyi olur ama transform kullanmak gerekir.
-    */
+    top:50%;
+    transform: translateY(-50%);
     font-size: 1.3rem;
 }
 
