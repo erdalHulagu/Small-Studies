@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        padding: 2rem;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .container div {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+      }
+
+      .container div:nth-child(1) {
+        box-shadow: 0 10px 15px rgb(63, 63, 63);
+      }
+
+      .container div:nth-child(2) {
+        box-shadow: 0 10px 15px rgb(225, 80, 80);
+      }
+
+      .container div:nth-child(3) {
+        box-shadow: 0 0 15px rgb(72, 182, 233);
+      }
+
+      .container div:nth-child(4) {
+        border:1px solid rgb(202, 202, 202);
+        transition: box-shadow 1s;
+      }
+
+      .container div:nth-child(4):hover {
+        box-shadow: -10px 0 15px rgb(36, 212, 95);
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
