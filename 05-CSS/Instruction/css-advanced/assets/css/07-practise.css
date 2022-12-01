@@ -1,0 +1,30 @@
+nav.menu{
+    background-color: aquamarine;
+}
+
+nav.menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    text-align: center;
+    background-color: rgb(62, 254, 190);
+}
+
+nav.menu li{
+    display: inline-block;  
+}
+
+
+nav.menu a{
+    background-color: rgb(62, 254, 190);
+    text-decoration: none;
+    color: rgb(46, 0, 115);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+}
+
+nav.menu a:hover{
+    background-color: rgb(46, 0, 115);
+    color: rgb(62, 254, 190);
+}

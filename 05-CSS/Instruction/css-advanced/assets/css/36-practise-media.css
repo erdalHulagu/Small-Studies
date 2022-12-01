@@ -1,0 +1,159 @@
+/*COMMON*/
+
+:root{
+    --color1: #FBB040;
+    --color2: #2D2D2D;
+
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* TOPBAR */
+nav.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color2);
+    padding: 1rem;
+    color: white;
+}
+
+nav.topbar a{
+    color: var(--color1);
+}
+
+/* NAVBAR */
+nav.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top:0;
+    z-index: 99;
+    background-color: white;
+}
+
+nav.navbar img{
+    width: 250px;
+    height: auto;
+}
+
+nav.navbar .switch{
+    display: none;
+}
+
+@media (max-width:769px){
+
+    nav.navbar .switch:checked + ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom:0;
+        right:0;
+        background-color: var(--color1);
+        transform: translateY(100%);
+        box-shadow: -3px 3px 10px rgb(80, 80, 80);
+        padding: 1rem 0;
+        opacity: 0.9;
+    }
+}
+
+
+nav.navbar label{
+    font-size: 1.5rem;
+}
+
+@media (min-width:769px){
+    nav.navbar label{
+        display: none;
+    }
+}
+
+nav.navbar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+    nav.navbar ul{
+        display: none;
+    }
+}
+
+nav.navbar a{
+    color: var(--color2);
+    padding:0.5rem 1rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+}
+
+@media (max-width:769px){
+    nav.navbar a{
+        display: block;
+        padding:0.5rem 2rem;
+    }
+}
+
+nav.navbar a:hover{
+    background-color: var(--color1);
+    color: white
+}
+
+.slider{
+    background-image: url("../img/nature.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+.slider::after{
+    content: "";
+    background-color: var(--color1);
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    opacity: 0.3;
+}
+
+.slider h2{
+    z-index: 1;
+    color: var(--color2)
+}
+
+@media (max-width: 350px){
+    .slider h2{
+        font-size: 2rem;
+    }
+}
+
+.whatsapp-logo{
+    position: fixed;
+    bottom:1rem;
+    right:1rem;
+    font-size: 3rem;
+
+}
+
+.whatsapp-logo a{
+    color: green;
+}
+
+main{
+    padding:1rem;
+}

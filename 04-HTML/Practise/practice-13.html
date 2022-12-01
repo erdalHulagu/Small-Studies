@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td><label for="ad">Adı</label></td>
+                            <td><input type="text" name="ad" id="ad"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="soyad">Soyadı</label></td>
+                            <td><input type="text" name="soyad" id="soyad"></td>
+                        </tr>
+                        <tr>
+                            <td>Cinsiyet</td>
+                            <td><input type="radio" name="cinsiyet" id="erkek">
+                            <label for="erkek">Erkek</label>
+                            <input type="radio" name="cinsiyet" id="kadin">
+                            <label for="kadin">Kadın</label>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td><label for="ilce">İlçe</label></td>
+                            <td><select name="ilce" id="ilce">
+                                    <option disabled selected>Seçiniz</option>
+                                    <option value="1">Karşıyaka</option>
+                                    <option value="2">Bornova</option>
+                                    <option value="3">Çiğli</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="eposta">E-posta</label></td>
+                            <td><input type="email" name="eposta" id="eposta"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="web">Web Sitesi</label></td>
+                            <td><input type="web" name="web" id="web"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tel">Telefon</label></td>
+                            <td><input type="tel" name="tel" id="tel"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Gönder"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Hobiler</td>
+                            <td>
+                                <input type="checkbox" name="futbol" id="futbol"><label for="futbol">Futbol</label><br>
+                                <input type="checkbox" name="basketbol" id="basketbol"><label for="basketbol">Basketbol</label><br>
+                                <input type="checkbox" name="voleybol" id="voleybol"><label for="voleybol">Voleybol</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="profile">Profil Fotoğrafı</label></td>
+                            <td><input type="file" name="profil" id="profil"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tarih">Doğum Tarihi</label></td>
+                            <td><input type="date" name="tarih" id="tarih"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="adres">Adres</label></td>
+                            <td>
+                                <textarea name="adres" id="adres" cols="30" rows="6"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

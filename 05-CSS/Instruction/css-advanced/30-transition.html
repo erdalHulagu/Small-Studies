@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .kutu{
+        width:100px;
+        height: 100px;
+        margin: 1rem auto;
+
+      }
+      .kutu1{
+        background-color: aquamarine;
+        transition: background-color 1s;
+      }
+
+      .kutu1:hover{
+        background-color: blueviolet;
+      }
+
+
+      .kutu2{
+        background-color: chartreuse;
+        transition: transform 1s;
+        
+      }
+
+      .kutu2:hover{
+        transform: translateX(300px)
+      }
+
+
+
+      .kutu3{
+        background-color: rgb(61, 21, 194);
+        transition: all 1s;
+        
+      }
+
+      .kutu3:hover{
+        background-color: cyan;
+        transform: scale(3) rotate(145deg);
+        border-radius: 50px;
+      
+      }
+
+
+
+      .kutu4{
+        background-color: rgb(134, 7, 64);
+        transition: all 1s;
+      }
+
+      .kutu4:hover{
+        opacity: 0;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <div class="kutu kutu1"></div>
+    <div class="kutu kutu2"></div>
+    <div class="kutu kutu3"></div>
+    <div class="kutu kutu4"></div>
+  </body>
+</html>

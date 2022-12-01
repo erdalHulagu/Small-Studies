@@ -1,0 +1,10 @@
+h1{
+    font-size: 2rem;
+    color:red;
+    text-align: center;
+}
+
+p.yazi{
+    padding: 1rem;
+    background-color: darksalmon;
+}

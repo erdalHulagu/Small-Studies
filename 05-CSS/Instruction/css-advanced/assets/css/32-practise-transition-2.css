@@ -1,0 +1,104 @@
+:root{
+    --color1:rgb(33, 58, 218);
+    --color2:rgb(88, 107, 234);
+    --color3:rgb(158, 91, 234);
+    --color4:rgba(158, 91, 234, 0.497);
+    
+}
+
+body{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding-left: 50px;
+}
+
+main header{
+    background-color: var(--color3);
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+main .content{
+    padding:2rem;
+}
+
+
+
+nav.left-menu{
+    background-color: var(--color2);
+    position: absolute;
+    top:0;
+    left:-150px;
+    bottom: 0;
+    width: 200px;
+    transition: left 1s;
+}
+
+nav.left-menu .title{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--color1);
+}
+
+nav.left-menu ul{
+    list-style-type: none;
+    padding: 1rem;
+    margin:0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+
+nav.left-menu a{
+    text-decoration: none;
+    color:black;
+    background-color: var(--color4);
+    padding: 0.3rem 0.7rem;
+    margin:0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.left-menu a:hover{
+    background-color: var(--color3);
+}
+
+nav.left-menu a:hover::after{
+    content: "\f0da";
+    font: var(--fa-font-solid);
+}
+
+nav.left-menu label{
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+nav.left-menu label:hover{
+    color: white;
+}
+
+.switch{
+    display: none;
+}
+
+.switch:checked + .left-menu {
+    left:0;
+}
+
+.switch:checked + .left-menu ul {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.switch:checked + .left-menu label{
+    transform: rotate(180deg);
+}
