@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width:60%;
+            border-collapse: collapse;
+            margin:0 auto;
+        }
+        table,th,td{
+            border:1px solid #ddd;
+            padding:.5rem
+        }
+        table th {
+            background-color: blue;
+            color:white;
+            text-align:left;
+        }
+        table tbody tr:nth-child(even){
+            background-color:rgb(243, 242, 242);
+        }
+        table tbody tr:hover{
+            background-color:lightgray;
+        }
+        table tfoot td:first-child{
+            text-align: right;
+            color:blue;
+            font-size:1.5rem;
+        }
+        table tfoot td:last-child{
+            color:red;
+            font-size:1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit.</td>
+                <td>16$</td>
+            </tr>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit.</td>
+                <td>16$</td>
+            </tr>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit.</td>
+                <td>16$</td>
+            </tr>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit.</td>
+                <td>16$</td>
+            </tr>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit.</td>
+                <td>16$</td>
+            </tr>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit.</td>
+                <td>16$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Price</td>
+                <td>96$</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
