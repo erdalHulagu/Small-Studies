@@ -1,0 +1,32 @@
+.form{
+    width:400px;
+    margin:2rem;
+    background-color: #ddd;
+}
+.form h1{
+    color:white;
+    background-color: black;
+    padding:.6rem;
+}
+.form form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    padding:1rem;
+}
+form input, form textarea{
+    padding:1rem;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    border-radius: 15px;;
+}
+form input:focus, form textarea:focus{
+    background-color: yellow;
+    outline :none;
+    box-shadow: 0 0 10px black;
+}
+form input[type="button"]{
+    background-color:aqua;
+    color:white;
+    border:none;
+    width:150px;
+}

@@ -1,0 +1,47 @@
+body{
+    background-color: azure;
+    padding:1rem 1.5rem;
+}
+h1,h2{
+    text-align:center;
+}
+div.container{
+    display:flex;
+    gap:3rem;
+    margin-bottom: 2rem;
+}
+div.container div{
+    padding:1rem;
+}
+div.container div:nth-child(odd){
+    background-color: lightgray;
+}
+
+div.content{
+    display:flex;
+    gap:3rem; 
+}
+.content img,.content ul{
+    flex:1;
+}
+.content p,.content ul{
+    margin-top:0;
+}
+.content p{
+    flex:3;
+}
+.content p::first-letter{
+    font-size:3rem;
+    font-weight: 800;
+}
+.content ul{
+    list-style-type: none;
+}
+.content ul li{
+    padding : .5rem 1rem;
+}
+.content ul li::first-letter{
+    font-weight: 700;
+    font-size:1.4rem;
+    background-color: orange;
+}
