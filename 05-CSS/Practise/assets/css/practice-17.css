@@ -1,0 +1,76 @@
+:root{
+    --color1: #e7c4ff;
+    --color2: #ffedff;
+    --color3: #7d03a5;
+    --sub-menu-width:150px;
+}
+
+nav.menu{
+    background-color: var(--color2);
+    text-align: center;
+}
+
+/*Tüm ul ler için*/
+nav.menu ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+/*1. seviye menü elemanlarını yanyana getirmek için*/
+nav.menu > ul > li{
+    display:inline-block;
+}
+
+/*Tüm li ler için */
+nav.menu > ul li{
+    position:relative;
+}
+
+/*İlk seviye menuden sonraki menüleri seçer*/
+nav.menu > ul > li ul{
+    display:none;
+    position:absolute;
+    left:0;
+    top:2.1rem;
+    text-align:left;
+    border:1px solid var(--color1);
+    width:var(--sub-menu-width);
+}
+
+/* 3. ve sonraki seviye menüleri yana açtırmak için*/
+
+nav.menu > ul li > ul > li ul{
+    left:var(--sub-menu-width);
+    top:0;
+}
+
+/*Tüm a tagları için*/
+nav.menu a{
+    text-decoration: none;
+    display:block;
+    padding:0.5rem 1rem;
+    color:#111111;
+}
+
+/*li lere hover verince çocuğu olan ul yi göstermek için*/
+
+nav.menu li:hover > ul{
+    display:inline-block;
+}
+/*ilk seviye li ler*/
+nav.menu > ul >li{
+    background-color: var(--color1);
+}
+/*ilk seviye li lere hover olunca*/
+nav.menu > ul >li:hover{
+    background-color: var(--color3);
+}
+nav.menu > ul >li:hover > a{
+    color:white;
+}
+/*diğer seviye a taglarına hover olunca */
+nav.menu > ul > li li a:hover{
+    background-color: var(--color2);
+}
+

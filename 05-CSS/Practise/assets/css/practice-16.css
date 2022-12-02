@@ -1,0 +1,38 @@
+body{
+    padding:1rem 2rem;
+}
+section{
+    margin:1rem 3rem;
+}
+section div.baslik{
+    text-align:center;
+}
+section div.container{
+    display:flex;
+    gap:2rem;
+}
+section div.content p{
+    margin-bottom:1.5rem;
+}
+.baslik{
+    position:relative;
+}
+.baslik span{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:.3;
+    font-size:2.5rem;
+    font-weight:600;
+
+}
+.numbers{
+    display:flex;
+    justify-content:space-between;
+}
+.numbers span:first-child{
+    font-size:1.2rem;
+    font-weight:600;
+    display:block;
+}
