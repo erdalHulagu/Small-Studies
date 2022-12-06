@@ -1,0 +1,147 @@
+:root {
+  --color1: #ebb211;
+  --color2: #04d5fa;
+  --color3: rgb(164, 161, 161);
+  --color4: #ce1465;
+}
+
+/* Common */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* TOPBAR */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color1);
+  padding: 1rem;
+}
+.topbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.topbar i {
+  color: var(--color2);
+}
+.topbar .contact-info i {
+  padding-right: 0.5rem;
+}
+.topbar .social-links i {
+  font-size: 1.5rem;
+}
+
+/* NAVBAR */
+@media (max-width: 570px) {
+  .navbar-brand img {
+    width: 250px;
+  }
+}
+
+.navbar .nav-item a {
+  border-radius: 25px;
+  font-size: 1.3rem;
+}
+
+.navbar .nav-item a:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+/* CAROUSEL */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  left: 8rem;
+  right: auto;
+  text-align: left;
+  transform: translateY(-50%);
+  /*  width: 50%;
+  background-color: var(--color1); */
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem;
+}
+
+/* WHY-US */
+.why-us {
+  position: relative;
+  top: -100px;
+  z-index: 2;
+  text-align: center;
+}
+
+.why-us i {
+  font-size: 3rem;
+  color: var(--color4);
+}
+
+.why-us div[class^="col"]:first-child .card {
+  background-color: var(--color1);
+}
+
+/* vıews */
+.views {
+  text-align: center;
+}
+.views i {
+  font-size: 3rem;
+  color: var(--color2);
+}
+
+.views h3 {
+  font-size: 5rem;
+  color: var(--color1);
+}
+
+/* GALLERY */
+.gallery img {
+  transition: transform 0.6s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.gallery div[class^="col"] {
+  overflow: hidden;
+}
+
+/* APPOINTMENT FORM */
+.appointment-form {
+  background-color: var(--color3);
+  padding: 3rem;
+}
+.appointment-form h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--color1);
+  padding: 3rem;
+}
+footer ul {
+  list-style: none;
+}
+footer i,
+footer h3 {
+  color: var(--color4);
+}
+
+footer div[class^="col"]:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+footer a:hover {
+  color: var(--color4);
+}

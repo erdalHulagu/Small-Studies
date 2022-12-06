@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Healty Life</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/web.css" />
+
+    <!-- 
+tel için
+"tel:+055555555555"              <i class="fa-solid fa-phone">
+whatsap web
+"https://wa.me/+055555555555"     <i class="fa-brands fa-whatsapp">
+mail için
+"mailto:info@email.com"           <i class="fa-solid fa-envelope">    
+Adres
+"https://www.google.com/maps"      <i class="fa-solid fa-map">  
+
+facebook
+ "https://tr-tr.facebook.com/"     <i class="fa-brands fa-facebook"></i>    
+twitter
+ "https://twitter.com/login?lang=tr"  <i class="fa-brands fa-twitter"></i>
+youtube
+ " https://www.youtube.com/ "         <i class="fa-brands fa-youtube">   
+
+ -->
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <!-- TODO: 
+    contact-info içerisinde iletişim,
+social-links içerisinde sosyal iconlar  -->
+    <div class="topbar">
+      <ul class="contact-info">
+        <li>
+          <a href="tel:+055555555555"
+            ><i class="fa-solid fa-phone"></i>+055555555555</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@email.com"
+            ><i class="fa-solid fa-envelope"></i>info@email.com</a
+          >
+        </li>
+        <li>
+          <a href="https://www.google.com/maps"
+            ><i class="fa-solid fa-map"></i>121 King Street, Melbourne</a
+          >
+        </li>
+      </ul>
+
+      <ul class="social-links">
+        <li>
+          <a href="https://tr-tr.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/login?lang=tr"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/"
+            ><i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- NAVBAR -->
+    <!-- TODO:
+    bootstrapten navbar alıp logoyu yerleştir
+Home, About, Services,Departments,Doctors
+Contact,    
+ -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo2.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Departments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <!-- TODO:
+bootstrapten carousel alıp
+iki slider-health-1 ve 2 resimlerini yerleştir
+1. slide taki h5: WELCOME TO HEALTY LIFE
+1.slidetaki p: Best of Care, Close to Home, Our patients are at the centre of
+              everything we do
+
+2.slide taki h5:Total Health Care Solution
+2.slide taki p: See your cardiovascular system in action with our interactive             
+-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel carousel-dark slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/img/slider-health-1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>WELCOME TO HEALTY LIFE</h5>
+            <p>
+              Best of Care, Close to Home, Our patients are at the centre of
+              everything we do
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/slider-health-2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Total Health Care Solution</h5>
+            <p>See your cardiovascular system in action with our interactive</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- why-us -->
+    <!-- TODO:
+    4 tane card yapısı
+    card-body nin içerisinde icon,h2 ve p olacak
+1.cardtaki icon: <i class="fa-solid fa-heart-pulse"></i>
+1.cardtaki h2:Why Choose Healty Life?
+1.cardtaki p:   Potency Health plays a decisive role in many social processes as
+                well as quality health services. Throughout our corporate
+                history, we have emphasized that health is a holistic process
+                and that it is not enough to maintain well-being, and that it is
+                also important to maintain well-being.
+                
+2.cardtaki icon:  <i class="fa-solid fa-flask"></i>
+2.cardtaki h2: Our Expertise
+2.cardtaki p:   Our reputation for outstanding clinical care and friendly
+                atmosphere, together with a continuous investment in technology
+                and facilities ensures we attract leading consultants and
+                specialists to work with us. We work with thousands of the most
+                experienced consultants and healthcare specialists from across
+                the country
+                
+3.cardtaki icon:  <i class="fa-solid fa-laptop-medical"></i>
+3.cardtaki h2: Our Pioneering Technology
+3.cardtaki p:   At Potency Health we are committed to providing our patients
+                with: advanced medical, surgical and oncological treatments
+                access to the latest drugs acquiring the best treatment
+                technology available the latest digital technology to support
+                clinical and patient administration systems, including
+                electronic eMDT and integrated clinical audit systems.              
+4.cardtaki icon:  <i class="fa-solid fa-circle-dollar-to-slot"></i>
+4.cardtaki h2:Cost-efficient Quality Care
+4.cardtaki p:Potency Health is committed to providing effective, high
+                quality, cost-efficient healthcare in its award winning
+                hospitals and clinics. We provide care to both patients with
+                insurance and those who wish to pay for their own care.
+
+    
+            -->
+    <section class="container why-us">
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body h-100">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <h2 class="card-title">Why Choose Healty Life?</h2>
+              <p class="card-text">
+                Potency Health plays a decisive role in many social processes as
+                well as quality health services. Throughout our corporate
+                history, we have emphasized that health is a holistic process
+                and that it is not enough to maintain well-being, and that it is
+                also important to maintain well-being.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-flask"></i>
+              <h2 class="card-title">Our Expertise</h2>
+              <p class="card-text">
+                Our reputation for outstanding clinical care and friendly
+                atmosphere, together with a continuous investment in technology
+                and facilities ensures we attract leading consultants and
+                specialists to work with us. We work with thousands of the most
+                experienced consultants and healthcare specialists from across
+                the country
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-laptop-medical"></i>
+              <h2 class="card-title">Our Pioneering Technology</h2>
+              <p class="card-text">
+                At Potency Health we are committed to providing our patients
+                with: advanced medical, surgical and oncological treatments
+                access to the latest drugs acquiring the best treatment
+                technology available the latest digital technology to support
+                clinical and patient administration systems, including
+                electronic eMDT and integrated clinical audit systems.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-circle-dollar-to-slot"></i>
+              <h2 class="card-title">Cost-efficient Quality Care</h2>
+              <p class="card-text">
+                Potency Health is committed to providing effective, high
+                quality, cost-efficient healthcare in its award winning
+                hospitals and clinics. We provide care to both patients with
+                insurance and those who wish to pay for their own care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- views -->
+    <!-- TODO:
+ 4 tane card yapısı
+ card-body nin içerisinde icon,h3 ve h5 olacak
+
+1.cardtaki icon: <i class="fa-solid fa-user-doctor"></i>
+1.cardtaki h3:112
+1.cardtaki h5:Doctors
+
+2.cardtaki icon:<i class="fa-solid fa-building"></i>
+2.cardtaki h3:21
+2.cardtaki h5:Departments
+
+3.cardtaki icon:   <i class="fa-solid fa-flask-vial"></i>
+3.cardtaki h3:70
+3.cardtaki h5:Research Labs
+
+4.cardtaki icon:  <i class="fa-solid fa-trophy"></i>
+4.cardtaki h3:185
+4.cardtaki h5:Awards
+
+-->
+    <div class="container views">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa-solid fa-user-doctor"></i>
+              <h3>112</h3>
+              <h5>Doctors</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa-solid fa-building"></i>
+              <h3>21</h3>
+              <h5>Departments</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa-solid fa-flask-vial"></i>
+              <h3>70</h3>
+              <h5>Research Labs</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa-solid fa-trophy"></i>
+              <h3>185</h3>
+              <h5>Awards</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <!-- TODO:
+row,col yapısı
+8tane col olacak ve assetsin içerisindeki
+galery resimleri yerleştirilecek
+-->
+    <div class="container gallery">
+      <div class="row g-3">
+        <div class="col-md-3">
+          <img
+            src="assets/img/gallery/gallery-1.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="assets/img/gallery/gallery-2.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="assets/img/gallery/gallery-3.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="assets/img/gallery/gallery-4.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="assets/img/gallery/gallery-5.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="assets/img/gallery/gallery-6.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="assets/img/gallery/gallery-7.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="assets/img/gallery/gallery-8.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- form -->
+    <!-- TODO:
+appoinment-form isimli section içerisinde
+bir container divi,
+içinde h3 :Make An Appointment
+form olacak
+formun içinde row,colyapısı içerisinde:
+8tane col
+firstName,lastName,ssn,email,
+phone,datetime,
+bir buton olacak: Send an Appointment Request
+alttaki colda: If you want to see your appointment and test result information,
+              you must register by using your SSN after appointment submission
+
+-->
+    <section class="appointment-form mt-5 mb-5">
+      <div class="container">
+        <h3>Make An Appointment</h3>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputName" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputSSN" class="form-label">SSN</label>
+            <input type="text" class="form-control" id="inputSSN" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" />
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPhone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="inputPhone" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputDatetime" class="form-label"
+              >Appointment Datetime</label
+            >
+            <input type="datetime" class="form-control" id="inputDatetime" />
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">
+              Send an Appointment Request
+            </button>
+          </div>
+          <div class="col-12 text-center">
+            <p>
+              If you want to see your appointment and test result information,
+              you must register by using your SSN after appointment submission
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <!-- TODO:
+footer tagı içerisinde
+sectiona container verilebilir
+row,colyapısı
+üç tane col olacak
+1.sinde:h3: Healty Life
+1.sinde p: Functional Medicine for a Personalized, Patient-Centric and
+              Scientific Approach!
+
+
+2.sinde menu:Home, About, Services,Departments
+Doctors, Contact
+
+3.sinde contact adlı ul
+içerisinde 1.li deki icon:<i class="fa-solid fa-address-card"></i>
+içerik:471 N San Dimas Canyon
+                Rd San Dimas, California(CA), 91773
+
+
+2.lideki icon: <i class="fa-solid fa-phone"></i>
+  (909) 541-5174
+  
+3.lideki icon: <i class="fa-solid fa-envelope"></i>
+ info@healtylife.com
+
+-->
+
+    <footer class="mt-5">
+      <section class="container">
+        <div class="row">
+          <div class="col">
+            <h3>Healty Life</h3>
+            <p>
+              Functional Medicine for a Personalized, Patient-Centric and
+              Scientific Approach!
+            </p>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Departments</a></li>
+              <li><a href="#">Doctors</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>
+                <i class="fa-solid fa-address-card"></i> 471 N San Dimas Canyon
+                Rd San Dimas, California(CA), 91773
+              </li>
+              <li><i class="fa-solid fa-phone"></i> (909) 541-5174</li>
+              <li><i class="fa-solid fa-envelope"></i> info@healtylife.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
