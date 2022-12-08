@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // backtick bir değişkende çoklu satır oluşturmaya izin verir
+        var html = `
+            <div>
+                <div>Col1</div>
+                <div>Col2</div>
+            </div>`;
+
+        // back tick öncesi bu şekilde multiline yapılıyordu
+        var html = '<div>';
+            html += '   <div>Col1</div>';
+            html += '   <div>Col2</div>';
+            html += '</div>';
+
+
+        const city = "İstanbul";
+        const name = "Veli";
+        const className = "text-danger";
+
+        // Eskiden string concatination (string interpolation)
+        console.log("Merhaba " + name + ". Nasılsın? " + city + " şehrinde havalar nasıl?")
+        console.log('<div class="' + className + '">' + name + '</div>');
+
+        // Back tick ile string interpolation
+        console.log(`Merhaba ${name}. Nasılsın? ${city} şehrinde havalar nasıl?`);
+        console.log(`<div class="${className}">${name}</div>`);   
+    </script>
+</body>
+</html>
