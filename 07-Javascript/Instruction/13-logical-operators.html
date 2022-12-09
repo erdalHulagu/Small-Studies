@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let x = false;
+        let y = true;
+        let z = true;
+        let m = "kedi";
+        let n = "kuş";
+        let t = "false";
+
+        const comp1 = y && x &&  t;
+        console.log(comp1);
+
+        const comp2 = y && z && m;
+        console.log(comp2);
+
+        const comp3 = y && z && m && n;
+        console.log(comp3);
+
+        const comp4 = y && z && null && m && n;
+        console.log(comp4);
+
+        const comp5 = y && z && !null && undefined && m && n;
+        console.log(comp5);
+
+        const comp6 = 3 & 4; //BITWISE operator
+        console.log(comp6);
+
+        // 3-> 0011
+        // 4-> 0100
+        //  -> 0000
+
+        const comp7 = 3 | 4; //BITWISE operator
+        console.log(comp7);
+
+        // 3-> 0011
+        // 4-> 0100
+        //  -> 0111
+
+
+
+
+
+
+    </script>
+</body>
+</html>

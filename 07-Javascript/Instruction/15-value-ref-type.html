@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // VALUE TYPE
+        // Javascript te string, number, BigInt, ve boolean value type data tipleridir.
+        let x = 5n;
+        let y = x;
+
+        console.log(x===y);
+
+        console.log(x,y);
+        x = 21n;
+        console.log(x,y);
+        y = 35n;
+        console.log(x,y);
+
+        // REF TYPE
+        // Javascriptte object ve array ler referans tiplerdir
+
+
+        const car1 = { color: "red", brand: "Mercedes", model: "S500"}
+        const car2 = car1;
+
+        console.log(car1, car2);
+
+        car1.color = "blue";
+        console.log(car1, car2);
+
+        
+
+
+    </script>
+</body>
+</html>
