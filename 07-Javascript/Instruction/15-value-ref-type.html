@@ -22,6 +22,12 @@
         y = 35n;
         console.log(x,y);
 
+        let a = 15;
+        let b = 15;
+        console.log(a===b);
+
+
+
         // REF TYPE
         // Javascriptte object ve array ler referans tiplerdir
 
@@ -29,13 +35,25 @@
         const car1 = { color: "red", brand: "Mercedes", model: "S500"}
         const car2 = car1;
 
+        console.log(car1===car2);
+
         console.log(car1, car2);
 
         car1.color = "blue";
         console.log(car1, car2);
 
-        
+        console.log(car1===car2);
 
+        
+        const computer1 = { cpu:"Intel", ram:16, disk:512 }
+        const computer2 = { cpu:"Intel", ram:16, disk:512 }
+
+        console.log(computer1 === computer2);
+        console.log({} == {});
+        console.log([] == []);
+        console.log({} === []);
+        console.log(null === null);
+        
 
     </script>
 </body>
