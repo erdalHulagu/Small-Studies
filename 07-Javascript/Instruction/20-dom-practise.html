@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    
+  </head>
+  <body>
+
+    <input type="number" id="txtNum1">
+    <input type="number" id="txtNum2">
+    <button onclick="sumNumbers()">Topla</button>
+    <h1 id="result"></h1>
+
+    
+    <script>
+      const num1El = document.querySelector("#txtNum1");
+      const num2El = document.querySelector("#txtNum2");
+      const resultEl = document.querySelector("#result");
+
+      function sumNumbers(){
+        const sum = Number(num1El.value) + Number(num2El.value);
+        //const sum = num1El.value*1 + num2El.value*1;
+        resultEl.innerText = sum;
+      }
+
+
+    </script>
+  </body>
+</html>

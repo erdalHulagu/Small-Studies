@@ -22,16 +22,30 @@
     </ul>
 
     <script>
+
+      
         const headingEl = document.querySelector("h1");
-        console.log(headingEl.innerText);
-        headingEl.innerText = "<u>Hello Javascript</u>"
+        console.log(headingEl.innerText); //getter
+        headingEl.innerText = "<u>Hello Javascript</u>" //setter
         headingEl.innerHTML = "<u><em>Hello Javascript</em></u>"
 
 
         const homeEl = document.querySelector(".menu li:last-child");
+        console.log(homeEl);
         homeEl.innerHTML = "Ana Sayfa"
 
 
+        const listItems = document.querySelectorAll(".menu li");
+        console.log(listItems);
+        console.log(listItems.length);
+        listItems[0].innerHTML = "Contact"
+        console.log(typeof(listItems[0]));
+        console.log(typeof(listItems));
+
+
+        const dizi = ["ali", 23];
+        console.log(typeof(dizi));
+        console.log(typeof(dizi[0]));
 
 
     </script>
