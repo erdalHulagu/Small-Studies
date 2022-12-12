@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="txtPrice" />
+    <button onclick="setPrice()">Hesapla</button>
+    <h1 id="result"></h1>
+
+    <script>
+      const priceEl = document.querySelector("#txtPrice");
+      const resultEl = document.querySelector("#result");
+
+      function setPrice() {
+        let price = Number(priceEl.value);
+        let discount;
+
+        switch (true) {
+          case price > 1500:
+            discount = 15;
+            break;
+          case price > 1000:
+            discount = 13;
+            break;
+          case price > 700:
+            discount = 10;
+            break;
+          case price > 500:
+            discount = 7;
+            break;
+          case price > 300:
+            discount = 5;
+            break;
+          default:
+            discount = 2;
+        }
+        price = price - price * discount / 100;
+        resultEl.innerText = price;
+
+     
+
+
+      }
+    </script>
+  </body>
+</html>

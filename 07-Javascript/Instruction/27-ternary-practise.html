@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <input type="number" id="txtSalary" onkeydown="showMessage(event)"/><br>
+      <input type="radio" name="status" id="rdEmployee" value="employee"> <label for="rdEmployee">Employee</label><br>
+      <input type="radio" name="status" id="rdRetired" value="retired"> <label for="rdRetired">Retired</label><br>
+      <button onclick="setSalary()" type="button">Show Salary</button>
+
+      <h1 id="result"></h1>
+    
+    <script>
+      const salaryEl = document.querySelector("#txtSalary");
+      const resultEl = document.querySelector("#result");
+
+      function setSalary(){
+        const status = document.querySelector("input[name='status']:checked").value;
+        let salary = Number(salaryEl.value);
+
+        salary = status === "retired" ? salary * 0.9 : salary * 0.95;
+        resultEl.innerHTML = salary;
+      }
+
+      function showMessage(e){
+        if(e.keyCode === 13){
+          console.log("Enter a basıldı");
+        }
+      }
+   
+    </script>
+  </body>
+</html>

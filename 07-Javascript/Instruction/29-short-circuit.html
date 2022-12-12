@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="txtScore">
+    <button id="btnCalculate" onclick="calculate()">Calculate</button>
+      
+    <script>
+      const scoreEl = document.querySelector("#txtScore");
+
+      function calculate(){
+        const score = Number(scoreEl.value);
+
+        // Short circuit method
+        (score > 100 || score<0) && alert("Score 0-100 arasında olmalıdır");
+
+        /* if method
+        if(score>100){
+          alert("100 den büyük olamaz")
+        }
+        */
+
+      }
+
+   
+    </script>
+  </body>
+</html>
