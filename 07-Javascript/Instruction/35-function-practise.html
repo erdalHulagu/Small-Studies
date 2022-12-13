@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="txtNumber" />
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+      const numberEl = document.querySelector("#txtNumber");
+
+      function calculate() {
+        const result = isPrimeNumber(numberEl.value);
+
+        alert(`The number you entered is ${result ? "" : "not"} prime`);
+      }
+
+  
+      function isPrimeNumber(num) {
+        if (!num || isNaN(num) || num < 2) return false; 
+        // return fonksiyonu çağrıldığı yere döndürür.
+
+        let flag = true;
+
+        for(let i=2; i < num; i++){
+          if(num % i === 0){
+            flag = false;
+            break; // döngüyü kırar
+          }
+
+        }
+        return flag;
+      }
+    </script>
+  </body>
+</html>

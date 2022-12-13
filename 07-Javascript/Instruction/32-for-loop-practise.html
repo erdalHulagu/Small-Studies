@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <input type="number" id="txtRate">
+    <button onclick="calculatePrices()">Update</button>
+
+    <ul id="productList">
+      <li>Notebook <span>1200</span>$</li>
+      <li>Display <span>400</span>$</li>
+      <li>Keyboard <span>50</span>$</li>
+      <li>Mouse <span>15</span>$</li>
+    </ul>
+
+    <script>
+      const rateEl = document.querySelector("#txtRate");
+      const productListEl = document.querySelectorAll("#productList li");
+
+      console.log(productListEl);
+
+      function calculatePrices(){
+        const rate = Number(rateEl.value);
+
+        for(let i=0; i<productListEl.length; i++){
+          const elPrice = productListEl[i].querySelector("span");
+          let price = Number(elPrice.innerText);
+          price = price + price * rate / 100;
+          elPrice.innerText = price;
+        }
+
+       
+      }
+
+    </script>
+  </body>
+</html>
