@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <script>
+      
+      // ****** Declaration ******
+      sayHello1();
+
+      function sayHello1(){
+        alert("Hello 1");
+      }
+      // ****** Declaration ******
+      
+
+
+      // ****** Expression ******
+      const sayHello2 = function(){
+        alert("Hello 2");
+      }
+      sayHello2(); 
+      // expression yönteminde önce function tanımlanmak zorundadır.
+      // Eğer tanımdan önce function call yapılırsa hata olur
+      // Çünkü expression yönteminde hoisting yoktur.
+      // ****** Expression ******
+
+
+      // var ile tanımlanan değişkenlerde hoiting olur
+      // let ve const ta olmaz
+      console.log(x);
+      var x = 5;
+
+
+      function test(){
+        console.log(y);
+        var y = 5;
+        console.log(y);
+        return y;
+      }
+
+      const z = test();
+      console.log(z);
+      const m = test;
+      console.log(m);
+
+      test();
+      m();
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

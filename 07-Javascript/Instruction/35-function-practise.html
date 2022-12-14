@@ -20,21 +20,28 @@
       }
 
   
-      function isPrimeNumber(num) {
+      function isPrimeNumber(num) { //10
         if (!num || isNaN(num) || num < 2) return false; 
         // return fonksiyonu çağrıldığı yere döndürür.
 
-        let flag = true;
+        let result = true;
+        // asal sayı 1 ve kendisinden başka hiç bir sayıya tam bölünemeyen sayıdır
+
+        // 2 - 9
 
         for(let i=2; i < num; i++){
           if(num % i === 0){
-            flag = false;
+            result = false;
             break; // döngüyü kırar
           }
-
         }
-        return flag;
+        return result;
+
       }
+
+
+      console.log(isPrimeNumber("Ali"));
+      console.log(isPrimeNumber("13"));
     </script>
   </body>
 </html>

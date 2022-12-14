@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+        const calculatePrice = (price, tax, discount) => {
+          if(!price || isNaN(price) || !tax || isNaN(tax) || !discount || isNaN(discount)) return;
+          
+          discount = Number(discount);
+          price = Number(price);
+          tax = Number(tax);
+
+          if(discount<=0) tax=0;
+          if(price>1500) discount += 10; //25
+
+          const totalTax = price * tax / 100; //360
+          const totalDiscount = price * discount / 100; //500
+
+
+          const result = price + totalTax - totalDiscount;
+          return result;
+        }
+
+
+        console.log( calculatePrice(2000, 18, 15) );
+        console.log( calculatePrice(2000, 18, null) );
+
+        const price = prompt("Ürün fiyatını giriniz");
+        const tax = prompt("Vergi oranını giriniz");
+        const discount = prompt("İndirim oranını giriniz");
+
+
+        const result = calculatePrice(price, tax, discount);
+        if(result){
+          // işlemler
+          alert( result );
+        }
+        else{
+          alert("Please enter valid prices");
+        }
+
+       
+        
+
+
+    </script>
+  </body>
+</html>
