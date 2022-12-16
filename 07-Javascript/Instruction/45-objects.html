@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+
+    <script>
+
+      const car = {
+        brand: "Mercedes",
+        modal: "S500",
+        color:"gray",
+        year: 2022,
+        engine:{
+          power: 11,
+          cylinder: 6,
+          torque: 3000
+        },
+        start: ()=> {
+          console.log("Engine is powered");
+        }
+      };
+
+      console.log(car);
+      console.log(car.color);
+      console.log(car.engine.torque);
+      console.log(typeof(car.engine.torque));
+
+      car.engine.torque = 500;
+      console.log(car.engine.torque);
+
+      car.start();
+
+
+    </script>
+
+
+  </body>
+</html>
