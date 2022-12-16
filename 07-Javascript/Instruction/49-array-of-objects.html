@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <select id="ddlCars">
+      <option>A</option>
+      <option>B</option>
+    </select>
+
+    <script>
+
+      const cars = [
+        {
+          brand: "Mercedes",
+          model: "S500",
+          image: "mercedes.jpg"
+        },
+        {
+          brand: "BMW",
+          model: "5.20i",
+          image: "bmw.jpg"
+        }
+      ];
+
+      let strOption="";
+      for(let i=0; i<cars.length; i++){
+        strOption += `<option>${cars[i].brand}</option>`;
+      }
+
+      document.querySelector("#ddlCars").innerHTML = strOption;
+
+      console.log(cars);
+      console.log(cars[1].model);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    
+    <script>
+      const cars = ["Porche", "Ferrari", "Opel", "Tesla", "Mercedes"];
+      console.log(cars);
+      let count = cars.push("Range Rover", "BMW");
+      console.log(cars, count);
+
+      let deletedCar = cars.pop();
+      console.log(cars);
+      console.log(deletedCar);
+
+      deletedCar = cars.shift();
+      console.log(cars);
+      console.log(deletedCar);
+
+      count = cars.unshift("Doğan", "Şahin");
+      console.log(cars, count);
+
+      cars.sort();
+      console.log(cars);
+
+      cars.reverse();
+      console.log(cars);
+
+
+      cars.splice(2, 2);
+      console.log(cars);
+
+      cars.splice(0, 0, "Jaguar");
+      console.log(cars);
+
+      cars.splice(3, 1, "Citroen","Volvo");
+      console.log(cars);
+
+      cars.splice(cars.length-1, 1, "Maserati");
+      console.log(cars);
+
+      
+
+    </script>
+  </body>
+</html>
