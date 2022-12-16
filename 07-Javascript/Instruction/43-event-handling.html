@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btnHello" onclick="sayHello1()">Say Hello</button>
+
+
+    <script>
+      // 1.YÖNTEM
+      
+      const sayHello1 = () => {
+        console.log("Say hello 1");
+      }
+
+      // 2.YÖNTEM
+      const sayHello2 = () => {
+        console.log("Say hello 2");
+      }
+
+      document.querySelector("#btnHello").onclick = sayHello2;
+
+     
+      // 3.YÖNTEM
+      document.querySelector("#btnHello").onclick = () => {
+        console.log("Say hello 3");
+      };
+
+
+      // 4.YÖNTEM
+      const sayHello4 = () =>{
+        console.log("Say hello 4");
+      };
+      document.querySelector("#btnHello").addEventListener("click", sayHello4);
+
+
+      // 5.YÖNTEM
+      document.querySelector("#btnHello").addEventListener("click", () =>{
+        console.log("Say hello 5");
+      });
+    
+
+
+
+    </script>
+  </body>
+</html>
