@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    
+    <script>
+      const animals = ["fil","kuş","deve","fare", "kuş", "kedi"];
+      console.log(animals);
+
+      console.log(animals.includes("fil"));
+      console.log(animals.includes("kaplumbağa"));
+
+      console.log(animals.indexOf("kuş"));
+      console.log(animals.indexOf("kaplumbağa"));
+
+      console.log(animals.lastIndexOf("kuş"));
+      console.log(animals.lastIndexOf("kaplumbağa"));
+
+      
+      console.log(animals.join());
+      console.log(animals.join("*******"));
+      console.log(animals.join(""));
+
+      console.log(animals.slice());
+      const newAnimals = animals.slice(3);
+      console.log(newAnimals);
+      newAnimals.push("TEST");
+      console.log(animals, newAnimals);
+
+      console.log(animals.slice(1,4));
+      console.log(animals.toString());
+
+
+      const letters = ['G', 'K', 'T', 'H'];
+      const numbers = [34,56,2,5,7,3,6,67];
+
+      const mixArr = letters.concat(numbers, 'Ali', 45, ['İstanbul','İzmir']);
+      console.log(mixArr);
+
+
+    </script>
+  </body>
+</html>
