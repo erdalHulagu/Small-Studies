@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding:1rem;
+            background-color:azure;
+            width:55%;
+        }
+        .container input,.container button{
+            padding:.5rem;
+            font-size:1.2rem;
+        }
+        .container label{
+            font-size:1.3rem;
+            margin-right:.6rem;
+        }
+        .container #msg{
+            margin-top:1rem;
+            width:400px;
+            padding:1rem;
+            color:yellow;
+            font-size:1.3rem;
+        }
+        .yesil{
+            background-color: green;
+        }
+        .kirmizi{
+            background-color: red;
+        }
+        .turuncu{
+            background-color: orange;
+        }
+        .invisible{
+            display:none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="number" name="yas" id="yas">
+        <input type="radio" name="cinsiyet" id="erkek" checked>
+        <label for="erkek">Erkek</label>
+        <input type="radio" name="cinsiyet" id="kadin">
+        <label for="kadin">Kadın</label>
+        <button type="button" onclick="durum()">Askerlik Durumu</button>
+        <button type="reset" onclick="sil()">Temizle</button>
+        <div id="msg"></div>
+    </div>
+
+
+    <script src="app9.js"></script>
+</body>
+</html>
