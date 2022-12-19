@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const prices = [-50, 500, 1500, 20, 10, 15];
+
+      // Tüm elemanlar şartı sağlıyorsa TRUE döner
+      if (prices.every((n) => n > 0)) {
+        alert("Tüm sayılar pozitif");
+      }
+
+      // En az bir tane şartı sağlayan eleman varsa TRUE döner
+      if (prices.some((n) => n > 0)) {
+        alert("Bazı sayılar pozitif");
+      }
+    </script>
+  </body>
+</html>
