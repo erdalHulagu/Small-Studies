@@ -2,12 +2,30 @@ import { countries } from "../data/countries.js";
 
 
 document.querySelector("#ddlCountries").addEventListener("change", (e)=> {
+  //console.log(e.target.options[e.target.selectedIndex].text);
+
   const selectedValue = e.target.value;
+  const selectedCountry = getCountry(selectedValue);
+
+  if(!selectedCountry) return;
+
+  const tableEl = document.querySelector("#tblCountry");
+
+  tableEl.querySelector("tr:nth-child(1) td").innerHTML = selectedCountry.capital;
+  tableEl.querySelector("tr:nth-child(2) td").innerHTML = Object.values(selectedCountry.currencies).map( (item)=> item.name ).join("-");
+  tableEl.querySelector("tr:nth-child(3) td").innerHTML = Object.values(selectedCountry.languages).join("-");
+
+  tableEl.style.display = "block";
+
+  console.log();
+
 });
 
 const loadData = () => {
   let options = '<option value="" selected disabled >Select a country</option>';
  
+  countries.sort();
+
   for (let country of countries) {
     //console.log(country);
     options += `<option value="${country.ccn3}">${country.name.common}</option>`;
