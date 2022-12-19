@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="prices"></p>
+    <p id="updatedPrices"></p>
+
+    <script>
+      const prices = [50, 500, 1500, 20, 560, 15];
+      const updatedPrices = prices.map((price) =>
+        (price > 100 ? price * 1.1 : price * 1.15).toFixed(0)
+      );
+
+      /*         
+        const updatedPrices = [];
+        for(let i=0; i<prices.length; i++){
+          let rate = 1.15;
+          if(prices[i]>100){
+            rate=1.10;
+          }
+          
+          updatedPrices.push(prices[i]*rate);
+        }
+ */
+
+      document.querySelector("#prices").innerHTML = prices.join("-");
+      document.querySelector("#updatedPrices").innerHTML =
+        updatedPrices.join("-");
+    </script>
+  </body>
+</html>

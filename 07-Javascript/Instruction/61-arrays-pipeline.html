@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="prices"></p>
+    <p id="updatedPrices"></p>
+
+    <script>
+      const prices = [50, 500, 1500, 20, 0, 300];
+
+      // PIPELINE EXAMPLE
+      prices
+        .filter((x) => x > 200) //  [500, 1500, 300]
+        .map((x) => x * 1.1) // [550, 1650, 330]
+        .forEach( (x)=> console.log(x));
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <p id="try"></p>
+    <p id="eur"></p>
+    <p id="usd"></p>
+
+    <script>
+
+        const pricesTRY = [24000,56000,12500,1435,5643,8900];
+        const usd = 18.65;
+        const eur = 19.81;
+
+        const pricesEUR = pricesTRY.map( (price) => (price/eur).toFixed(2) );
+        const pricesUSD = pricesTRY.map( (price) => (price/usd).toFixed(2) );
+
+        document.querySelector("#try").innerHTML = pricesTRY.join("-");
+        document.querySelector("#eur").innerHTML = pricesEUR.join("-");
+        document.querySelector("#usd").innerHTML = pricesUSD.join("-");
+
+
+
+    </script>
+  </body>
+</html>
