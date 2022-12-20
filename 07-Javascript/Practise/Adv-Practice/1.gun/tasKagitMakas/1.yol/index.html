@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.yol</title>
+    <style>
+      .container {
+        position: absolute;
+        top: 20vh;
+        left: 30vw;
+        right: auto;
+        bottom: auto;
+        background-color: rgb(176, 86, 176);
+        padding: 7rem;
+      }
+      span {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Taş makası, makas kağıdı, kâğıt da 
+  taşı yener. Eğer oyuncular aynı durumu seçerse 
+  oyun berabere biter. -->
+
+    <div class="container">
+      <h2>Bilgisayar: <span id="bilgisayar"></span></h2>
+      <h2>Sen: <span id="kullanici"></span></h2>
+
+      <h2>Sonuç: <span id="sonuc"></span></h2>
+
+      <button id="tas">TAŞ</button>
+      <button id="kagit">KAĞIT</button>
+      <button id="makas">MAKAS</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
