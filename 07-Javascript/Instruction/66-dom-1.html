@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hello">Hello Javascript</h1>
+
+    <p class="contact">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      ipsa ipsam nostrum nam recusandae explicabo nemo atque aliquam quo sunt ab
+      odio, culpa provident quos molestias architecto, consequuntur assumenda
+      ipsum.
+    </p>
+
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ullam vero
+      tempora illum porro autem. Eligendi repellendus facilis amet magnam quos
+      distinctio voluptatem? Cumque molestias, laudantium illum consectetur iure
+      est.
+    </p>
+
+    <script>
+      const el1 = document.querySelector("#hello");
+      const el2 = document.getElementById("hello");
+      console.log(el2);
+
+      const elP = document.getElementsByTagName("p");
+      console.log(elP);
+      console.log(elP[0]);
+
+      const elAbout = document.getElementsByClassName("about");
+      console.log(elAbout);
+
+    </script>
+  </body>
+</html>
