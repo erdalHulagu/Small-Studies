@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <input type="text" id="txtName">
+    <button id="btnAdd">Add</button>
+    <button id="btnDel">Delete</button>
+
+    <ul id="list">
+      <li>Lorem.</li>
+      <li>Animi.</li>
+      <li>Dignissimos?</li>
+      <li>Minima.</li>
+      <li>Expedita?</li>
+    </ul>
+
+
+
+    <script>
+      const listEl = document.getElementById("list");
+      const txtNameEl = document.getElementById("txtName");
+
+
+      document.getElementById("btnAdd").addEventListener("click", ()=>{
+        const newLi = document.createElement("li");
+        newLi.innerHTML = txtNameEl.value;
+        newLi.classList.add("bg-primary");
+        newLi.setAttribute("id",`li-${txtNameEl.value}`);
+        newLi.addEventListener("mouseover", ()=>{
+          alert("HEllo");
+        });
+
+        const newLi1 = document.createElement("li");
+        newLi1.innerHTML = "Test";
+
+        //listEl.appendChild(newLi);
+        listEl.prepend(newLi, newLi1);
+      });
+
+
+      document.getElementById("btnDel").addEventListener("click", ()=>{
+        if(listEl.querySelectorAll("li").length==0) return;
+        listEl.querySelector("li:last-child").remove();
+      });
+
+
+    </script>
+  </body>
+</html>
