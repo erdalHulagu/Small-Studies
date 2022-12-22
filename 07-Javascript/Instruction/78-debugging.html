@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+  </head>
+  <body>
+    <h1 id="result"></h1>
+    <button id="btn">Click me</button>
+
+
+    <script>
+
+      const multiply = (a) => {
+        let result = 0;
+        if(a>50){
+          result = a * 20;
+        }
+        return result;
+      }
+
+      document.querySelector("#btn").addEventListener("click", ()=>{
+          let total = 0;
+
+          for(let i=0; i<100; i+=10){
+            total += multiply(i);
+          }
+
+          document.querySelector("#result").innerHTML = total;
+
+      });
+
+
+
+
+
+
+    </script>
+
+
+    </body>
+
+</html>
