@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+  </head>
+  <body>
+    <script>
+
+        const person = {
+          firstName: "Ali",
+          lastName: "Gel",
+          salary: 10000,
+          department: "IT"
+        }
+
+        let message = `${person.firstName} ${person.lastName} isimli personel ${person.department} departmanında çalışıyor ve maaşı ${person.salary}$`
+        console.log(message);
+
+
+        // 1.Yöntem
+        /*
+        const firstName = person.firstName;
+        const lastName = person.lastName;
+        const salary = person.salary;
+        const department = person.department;
+        */
+
+        // 2.Yöntem: Destructering
+        const {firstName, lastName, salary, department} = person;
+
+
+        message = `${firstName} ${lastName} isimli personel ${department} departmanında çalışıyor ve maaşı ${salary}$`
+        console.log(message);
+
+
+        
+
+
+
+    </script>
+  </body>
+</html>
