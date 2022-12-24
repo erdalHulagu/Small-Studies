@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+  </head>
+  <body>
+    <script>
+      const siparisVer = (fn) => {
+        setTimeout(() => {
+          fn("lahmacun");
+        }, 10);
+      };
+
+      console.log("Sinemaya gittik");
+      console.log("Bowling oynadık");
+      console.log("Oyun alanına gittik");
+      console.log("Karnımız acıktı. Siparişi verdik");
+
+      siparisVer(function (food) {
+        console.log(`${food} hazır`);
+        console.log("Yemeği yedik")
+      });
+
+      console.log("Ayakkabılara baktık");
+      console.log("Boş masa aradık");
+
+    </script>
+  </body>
+</html>
