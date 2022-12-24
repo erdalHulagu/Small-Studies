@@ -13,8 +13,8 @@ document.querySelector("#frmLogin").addEventListener("submit", (e)=>{
         
     } catch (error) {
         alert(error);
-
     }
+    
 });
 
 const isEmail = (email) => {

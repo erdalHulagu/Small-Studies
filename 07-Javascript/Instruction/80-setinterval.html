@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+  </head>
+  <body>
+    <ul id="list"></ul>
+
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button>
+
+    <script>
+      const list = document.querySelector("#list");
+      let listInterval = null;
+
+      document.querySelector("#btnStart").addEventListener("click", () => {
+        if(listInterval!==null) return;
+
+        listInterval = setInterval(() => {
+          const li = document.createElement("li");
+          li.innerText = Math.floor(Math.random() * 100);
+          list.append(li);
+        }, 2000);
+      });
+
+
+      document.querySelector("#btnStop").addEventListener("click", () => {
+        clearInterval(listInterval);
+        listInterval = null;
+        console.log(listInterval);
+      });
+
+    </script>
+  </body>
+</html>
