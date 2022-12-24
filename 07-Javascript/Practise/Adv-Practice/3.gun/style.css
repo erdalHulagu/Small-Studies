@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+
+body {
+  font-family: "Teko", sans-serif;
+  background: url("img/2.jpg") center/cover no-repeat;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+span {
+  font-size: 1.7rem;
+}
+p {
+  font-size: 5rem;
+}
+.sayac {
+  background-color: antiquewhite;
+  border: 1px solid gray;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.mesaj {
+  background: url("img/camAgc.jpg") center/cover no-repeat;
+  text-align: center;
+  position: relative;
+}
+.mesaj .msj {
+  background-color: aliceblue;
+  border-radius: 30px;
+  position: absolute;
+  top: 20%;
+  bottom: auto;
+  color: red;
+  font-weight: 900;
+  font-size: 2rem;
+}
