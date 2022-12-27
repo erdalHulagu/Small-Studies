@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
+
+    <script>
+      document.getElementById("btn").addEventListener("click", ()=>{
+        console.log("Clicked");
+
+        confirmAsync("Are you sure to update").then(resp=> console.log(resp));
+
+        //const result = confirm("Are you sure to delete?");
+        //console.log(result);
+        console.log("Ended");
+      });
+
+
+      const confirmAsync = (msg) => {
+        // Promise in kendisi asenkron değil, senkrondur. Asenkron yapılardan veri döndürmek için kullanılır.
+        return new Promise( (resolve)=>{
+          setTimeout( ()=>{
+            const result = confirm(msg);
+            resolve(result);
+          }, 0);
+        } );
+      }
+
+    </script>
+  </body>
+</html>

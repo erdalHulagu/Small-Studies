@@ -23,6 +23,14 @@ const createShows = (query) => {
 
     document.getElementById("tvShows").innerHTML = strShows;
     document.getElementById("loading").classList.add("d-none");
+
+    //iç içe callback örneği
+    /*
+    getShowDetails(shows[0].show.id, (show)=>{
+        console.log(show);
+    })
+    */
+
   });
 };
 
