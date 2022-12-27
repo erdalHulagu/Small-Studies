@@ -1,0 +1,45 @@
+img {
+  width: 15rem;
+  display: block;
+  object-fit: cover;
+  height: 15rem;
+  border-radius: 1rem;
+  transition: transform 0.5s;
+}
+img:hover {
+  transform: scale(1.2);
+}
+
+.urunler {
+  padding-top: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+section {
+  display: flex;
+}
+.markalar {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  margin: 0 0 0.5rem 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: lightcoral;
+  border: none;
+  color: purple;
+}
+section {
+  margin-top: 2rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  margin-top: 3rem;
+}
