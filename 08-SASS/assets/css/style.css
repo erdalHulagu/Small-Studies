@@ -1,9 +1,79 @@
-a {
-  color: red;
-  text-decoration: none;
-  background-color: aquamarine;
+body {
+  font-family: Poppins;
 }
 
-b {
-  color: black;
+.weather-card {
+  background-color: rgb(48, 48, 48);
+  border-radius: 20px;
+  color: rgb(237, 237, 237);
+  display: flex;
+}
+.weather-card .left {
+  flex: 2;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.weather-card .left h2, .weather-card .left h4, .weather-card .left h5 {
+  margin: 0;
+}
+.weather-card .left .top h2 {
+  font-size: 2rem;
+}
+.weather-card .left .top h4, .weather-card .left .top h5 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.weather-card .left .bottom h2, .weather-card .left .bottom h4 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.weather-card .left .bottom h5 {
+  font-size: 0.8rem;
+}
+.weather-card .right {
+  flex: 3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.weather-card .right ul.status {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.weather-card .right ul.status li {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-card .right ul.days {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.weather-card .right ul.days li {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+}
+.weather-card .right ul.days li.active {
+  background-color: rgb(237, 237, 237);
+  color: rgb(48, 48, 48);
+}
+.weather-card .right button {
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 0;
+  background-image: linear-gradient(60deg, rgb(150, 250, 146), rgb(57, 211, 6));
 }/*# sourceMappingURL=style.css.map */
