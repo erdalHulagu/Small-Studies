@@ -3,7 +3,7 @@ body {
 }
 
 .weather-card {
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(28, 18, 102);
   border-radius: 20px;
   color: rgb(237, 237, 237);
   display: flex;
@@ -22,7 +22,7 @@ body {
 }
 .weather-card > .left::before {
   content: "";
-  background-color: rgba(57, 211, 6, 0.5);
+  background-color: rgba(153, 38, 195, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ body {
 }
 .weather-card > .left h2, .weather-card > .left h4, .weather-card > .left h5 {
   margin: 0;
-  text-shadow: 0 0 5px rgb(133, 133, 133);
+  text-shadow: 0 0 5px rgb(28, 18, 102);
 }
 .weather-card > .left .top {
   z-index: 3;
@@ -94,12 +94,12 @@ body {
 }
 .weather-card > .right ul.days li.active {
   background-color: rgb(237, 237, 237);
-  color: rgb(48, 48, 48);
+  color: rgb(28, 18, 102);
 }
 .weather-card > .right button {
   padding: 0.5rem;
   border-radius: 20px;
   border: 0;
   cursor: pointer;
-  background-image: linear-gradient(60deg, rgb(150, 250, 146), rgb(57, 211, 6));
+  background-image: linear-gradient(60deg, rgba(153, 38, 195, 0.5), rgb(153, 38, 195));
 }/*# sourceMappingURL=style.css.map */
