@@ -8,7 +8,7 @@ body{
     color: rgb(237, 237, 237);
     display: flex;
 
-    .left{
+    > .left{
         flex: 2;
         background-image: url("../img/bg.jpg");
         background-size: cover;
@@ -18,12 +18,23 @@ body{
         flex-direction: column;
         justify-content: space-between;
         padding: 20px;
+        position: relative;
+
+        &::before{
+            content: "";
+            background-color: rgba(57, 211, 6, 0.5);
+            position: absolute;
+            top:0; left:0; right:0; bottom:0;
+            border-radius: 20px;
+        }
 
         h2, h4, h5{
             margin:0;
+            text-shadow: 0 0 5px rgb(133, 133, 133) ;
         }
 
         .top{
+            z-index: 3;
             h2{
                 font-size: 2rem;
             }
@@ -34,6 +45,7 @@ body{
         }
 
         .bottom{
+            z-index: 3;
             h2, h4{
                 font-size: 3rem;
                 line-height: 3.5rem;
@@ -42,9 +54,11 @@ body{
                 font-size: 0.8rem;
             }
         }
+
+
     }
 
-    .right{
+    > .right{
         flex:3;
         padding:20px;
         display: flex;
@@ -76,6 +90,21 @@ body{
                 flex-direction: column;
                 padding: 2rem 1rem;
                 border-radius: 20px;
+
+                > span {
+
+                    &:nth-child(1){
+                        font-size: 2.5rem;
+                    }
+
+                    &:nth-child(3){
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                    }
+                }
+                
+                
+                
             }
 
             li.active{
@@ -93,5 +122,4 @@ body{
         }
     }
 }
-
 
