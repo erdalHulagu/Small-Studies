@@ -2,6 +2,26 @@ body {
   font-family: Poppins;
 }
 
+.button, .weather-card > .right .btn-change {
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  background-image: linear-gradient(60deg, rgba(153, 38, 195, 0.5), rgb(153, 38, 195));
+}
+
+.youtube {
+  color: red;
+}
+
+.instagram {
+  color: green;
+}
+
+.facebook {
+  color: blue;
+}
+
 .weather-card {
   background-color: rgb(28, 18, 102);
   border-radius: 20px;
@@ -108,10 +128,7 @@ body {
   background-color: rgb(237, 237, 237);
   color: rgb(28, 18, 102);
 }
-.weather-card > .right button {
-  padding: 0.5rem;
-  border-radius: 20px;
-  border: 0;
-  cursor: pointer;
-  background-image: linear-gradient(60deg, rgba(153, 38, 195, 0.5), rgb(153, 38, 195));
+.weather-card > .right .btn-change {
+  border: 2px dotted rgb(237, 237, 237);
+  padding: 0.7rem;
 }/*# sourceMappingURL=style.css.map */

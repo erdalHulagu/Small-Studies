@@ -1,5 +1,6 @@
 @use "variables" as v;
 @use "mixins" as m;
+@use "common";
 
 .weather-card{
     @include m.bg(color, v.$color1);
@@ -104,12 +105,14 @@
             }
         }
 
-        button{
-            padding: 0.5rem;
-            border-radius: 20px;
-            border:0;
-            cursor: pointer;
-            @include m.bg(image,  linear-gradient(60deg, v.$color4, v.$color3));
+        
+
+        .btn-change{
+            @extend .button;
+            border:2px dotted v.$color2;
+            padding: 0.7rem;
+
         }
+
     }
 }
