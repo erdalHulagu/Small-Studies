@@ -11,3 +11,7 @@
     flex-direction: $fd;
     gap:$gap;
 }
+
+@mixin bg($key, $value){
+    background-#{$key}: $value;
+}
