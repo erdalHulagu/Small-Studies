@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* odev-1)soru:
+    Bir sayıAl(); fonksiyonu yapalım.
+    Fonksiyonu çağırdığımızda:
+    Kullanıcıdan sayı alsın
+    ve
+    kullanicinin girdigi sayilarin toplami 500'u gecerse
+        "çok oldu, toplam .... oldu" yazsin
+       
+odev-2) sayiTopla(); fonksiyonu tanımlayın.
+
+Bu fonksiyon çalıştığında:
+
+ kullanicidan kac sayi toplamak istedigini alsın,
+       bu sayilari alsın(kaç tane girmek istediğini söylediyse o sayıda )
+
+  ve bu sayilarin toplamini ekrana yazdirsın  */
+
+      function sayiAl() {
+        var toplam = 0;
+        var sayi = 0;
+
+        while (toplam < 500) {
+          sayi = Number(prompt("Lütfen bir sayı giriniz"));
+          toplam += sayi;
+        }
+        return "yeterli, toplam: " + toplam + "a ulaştı";
+      }
+
+      let sonuc = sayiAl();
+
+      alert(sonuc);
+    </script>
+  </body>
+</html>

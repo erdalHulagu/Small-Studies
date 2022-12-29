@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* odev-2) sayiTopla(); fonksiyonu tanımlayın.
+
+Bu fonksiyon çalıştığında:
+
+ kullanicidan kac sayi toplamak istedigini alsın,
+       bu sayilari alsın(kaç tane girmek istediğini söylediyse o sayıda )
+
+  ve bu sayilarin toplamini ekrana yazdirsın  */
+
+      function sayiTopla() {
+        var sayiAdedi = prompt("Kaç sayı toplamak istersiniz?");
+
+        var sayi = 0;
+        var toplam = 0;
+
+        for (var i = 1; i <= sayiAdedi; i++) {
+          sayi = Number(prompt("Lütfen bir sayı giriniz"));
+          toplam += sayi;
+        }
+
+        return "girilen " + sayiAdedi + "dır. Bu sayıların toplamı: " + toplam;
+      }
+
+      let sonuc = sayiTopla();
+      alert(sonuc);
+    </script>
+  </body>
+</html>

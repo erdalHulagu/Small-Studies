@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Kullanıcının girdiği rengin ana renk veya ara renk olduğunu 
+kullanıcıya bildirelim
+ 1-sarı 2-kırmızı 3-mavi 4-yeşil 5-turuncu 6-mor
+*/
+      const renk = prompt(
+        "Lütfen seçmek istediğiniz rengin sayısını giriniz: 1-sarı 2-kırmızı 3-mavi 4-yeşil 5-turuncu 6-mor "
+      );
+      let mesaj;
+
+      if (renk == 1 || renk == 2 || renk == 3) {
+        mesaj = "Seçtiğiniz renk ana renklerdendir";
+      } else if (renk == 4 || renk == 5 || renk == 6) {
+        mesaj = "Seçtiğiniz renk ara renklerdendir";
+      } else {
+        mesaj = "Geçerli bir sayı giriniz";
+      }
+      alert(mesaj);
+    </script>
+  </body>
+</html>

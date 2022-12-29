@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Vize ve final notlarını alıp 
+     transkript harfsiz notunu
+     ort=(vize+final)/2;
+         hesaplayan programı object kullanarak yapınız.
+ var notlar = {
+	vize:0,
+	final:0,
+	ort:0
+}
+ */
+      var notlar = {
+        vize: 0,
+        final: 0,
+        ort: 0,
+      };
+
+      notlar.vize = Number(prompt("Vize notunu giriniz"));
+      notlar.final = Number(prompt("Final notunu giriniz"));
+      notlar.ort = (notlar.vize + notlar.final) / 2;
+
+      console.log(notlar);
+    </script>
+  </body>
+</html>

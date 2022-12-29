@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  4-A sınıfına isim ve soyisim bilgilerini kullanıcıdan alarak 
+forloop ile
+5 tane öğrenci kaydediniz.
+
+const student = {
+        isim: "",
+        soyIsim: "",
+        sinif: "4-A",
+      };
+
+     
+ */
+      /* 
+      for (var i = 1; i < 6; i++) {
+        const student = {
+          isim: prompt(i + ". ismi giriniz."),
+          soyIsim: prompt(i + ". soyismi giriniz."),
+          sinif: "4-A",
+        };
+        console.log(student);
+      } */
+
+      for (var i = 1; i <= 5; i++) {
+        let ad = prompt("öğrencinin ismini giriniz");
+        let soyAd = prompt("öğrencinin soy ismini giriniz");
+        let ogrenci = {
+          isim: ad,
+          soyIsim: soyAd,
+          sinif: "4-A",
+        };
+        console.log(i);
+        console.log(ogrenci);
+      }
+    </script>
+  </body>
+</html>

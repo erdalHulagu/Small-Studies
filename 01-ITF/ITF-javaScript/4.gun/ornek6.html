@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  kullanicidan iki tamsayi alip
+       bu sayilari ve aralarindaki tum tamsayilari yazdiran bir kod olusturun */
+
+      const baslangic = prompt("Birinci sayıyı giirniz");
+      const bitis = prompt(
+        "Birinci sayıdan büyük olacak şekilde ikinci bir sayı giriniz"
+      );
+
+      //for loop ile çözelim:
+
+      let mesaj = "";
+      for (var i = baslangic; i <= bitis; i++) {
+        mesaj += i + ",";
+      }
+      mesaj += "\n";
+      console.log(mesaj);
+
+      //aynı soruyu while loop ile çözelim:
+
+      var i = baslangic;
+      mesaj = "";
+
+      while (i <= bitis) {
+        mesaj += i + "-";
+        i++;
+      }
+      console.log(mesaj);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Kullanıcının girmiş olduğu metin uzunluğu 2 ile 50 arasında ise
+         «merhaba» yazan değilse hata veren programı yapınız
+ */
+      const isim = prompt("Adınızı giriniz");
+      let kelimeninUzunlugu = isim.length;
+
+      if (kelimeninUzunlugu >= 2 && kelimeninUzunlugu <= 50) {
+        alert("merhaba");
+      } else {
+        alert("Hatalı giirş");
+      }
+    </script>
+  </body>
+</html>

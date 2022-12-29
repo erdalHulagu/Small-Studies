@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Girilen 10 sayının ortalamasını bulan programı yapınız.
+       */
+
+      var toplam = 0;
+      var ortalama = 0;
+      //1+2+3+4+5+6+7+8+9+10=55/10=5.5
+      for (var i = 0; i < 10; i++) {
+        const sayi = prompt(i + 1 + "inci sayıyı giriniz");
+        toplam = toplam + Number(sayi);
+        //toplam +=Number(sayi);
+        ortalama = toplam / 10;
+      }
+
+      alert(ortalama);
+    </script>
+  </body>
+</html>

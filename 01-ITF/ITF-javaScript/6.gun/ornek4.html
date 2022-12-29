@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Maaş ortalamasını bulan üç parametreli bir fonksiyon oluşturalım.
+Aşağıdaki personellerin maaş ortalamasını fonksiyonu çağırarak bulalım.
+Maaşı ortalamanın altında olan personellerin maaşına yüzde on zam yapalım.
+
+
+const personel1 = {
+        isim: "Ali",
+        soyIsim: "Deniz",
+        maas: 13000,
+      };
+     const personel2 = {
+        isim: "Melek",
+        soyIsim: "Tan",
+        maas: 10000,
+      };
+     const personel3 = {
+        isim: "Büşra",
+        soyIsim: "Demir",
+        maas: 15000,
+      }; */
+
+      const personel1 = {
+        isim: "Ali",
+        soyIsim: "Deniz",
+        maas: 13000,
+      };
+      const personel2 = {
+        isim: "Melek",
+        soyIsim: "Tan",
+        maas: 10000,
+      };
+      const personel3 = {
+        isim: "Büşra",
+        soyIsim: "Demir",
+        maas: 15000,
+      };
+
+      function ucSayiOrtalamasi(sayi1, sayi2, sayi3) {
+        return (sayi1 + sayi2 + sayi3) / 3;
+      }
+
+      console.log(
+        ucSayiOrtalamasi(personel1.maas, personel2.maas, personel3.maas)
+      );
+
+      personel2.maas = 1.1 * personel2.maas;
+
+      /*    personel3 = {};
+      console.log(personel3); */
+
+      console.log(personel2);
+    </script>
+  </body>
+</html>

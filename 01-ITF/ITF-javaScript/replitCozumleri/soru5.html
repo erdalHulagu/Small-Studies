@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Adada yalnız bir maymun var
+        Her gün 4 muz yemesi gerekiyor
+        o adada sadece 165 muz var
+        Aşağıdaki değişkenleri oluşturun ve maymunun kac gun hayatta kalabilecegini 
+        hesaplayan kodu yaziniz.
+        Do while döngüsü, artırma ve eksiltme ve if deyimlerini kullanın
+       
+        int MuzSayısı =165, hayatta kalmaDays = 0;
+        boolean maymunAlive = true;
+        */
+      //Maymunun kac gun hayatta kalacagini gosteren kod
+      //Hayatta kaldigi suerece muz vermelisin(DO While)
+      //eger 4 ten az muz kalirsa maymunlar olur
+
+      let muzSayisi = 165;
+      let maymunAlive = true;
+      let survivalDays = 1;
+
+      do {
+        //  muzSayisi =muzSayisi-4;
+        muzSayisi -= 4;
+        survivalDays++;
+        if (muzSayisi < 4) {
+          maymunAlive = false;
+          console.log(
+            "bugün " + survivalDays + ".gun ,yaşayamadı,muz bitti,maymun öldü"
+          );
+        } else {
+          console.log("bugün " + survivalDays + "gun yaşadı");
+        }
+      } while (maymunAlive);
+
+      console.log("Toplam yaşadığı gün sayısı" + (survivalDays - 1));
+    </script>
+  </body>
+</html>

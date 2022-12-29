@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 05:52:54 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDU6NDE6MjIgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDU6NTI6NTQgUE07NDszMDA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi % 2 == 0">
+                <then>
+                    <output expression="&quot;&#199;ift&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;tek&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

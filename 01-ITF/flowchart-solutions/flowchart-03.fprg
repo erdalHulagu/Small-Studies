@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 05:27:43 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjg7MTA6NTM6NDIgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDU6Mjc6NDMgUE07MjszMDAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fiyat, satisFiyati" type="Real" array="False" size=""/>
+            <output expression="&quot;&#220;r&#252;n fiyat&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="fiyat"/>
+            <if expression="fiyat&lt;=0">
+                <then>
+                    <output expression="&quot;L&#252;tfen s&#305;f&#305;rdan b&#252;y&#252;k bir de&#287;er giriniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="satisFiyati" expression="fiyat * 1.18"/>
+                    <output expression="satisFiyati" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

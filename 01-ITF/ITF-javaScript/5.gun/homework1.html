@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  1-100 arasında rastgele tutulan sayıyı tahmin etme oyunu yazınız.
+      Math.random() * (max - min) + min
+      Math.floor:ondalıklı kısmı yok eder.
+      Math.random():0 ile 1 arasında rastgele bir sayı tutar
+ */
+
+      let rastgeleSayi = Math.floor(Math.random() * 99 + 1);
+      var sayi = 0;
+
+      do {
+        const tahmin = prompt("Şimdi tahminiz nedir?");
+        sayi = Number(tahmin);
+
+        if (sayi == rastgeleSayi) {
+          alert("Tebrikler,doğru tahmin!");
+        } else if (sayi > rastgeleSayi) {
+          alert("Daha küçük bir sayı tahmin ediniz");
+        } else {
+          alert("Daha büyük bir sayı giriniz");
+        }
+      } while (sayi != rastgeleSayi);
+
+
+      
+    </script>
+  </body>
+</html>

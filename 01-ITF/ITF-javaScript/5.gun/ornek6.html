@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* * Bir ile kendisine parametre olarak gönderilen sayı arasındaki,
+         yine kendisine parametre olarak gönderilen sayıya bölünebilen
+          kaç adet sayı olduğunu bulan fonksiyonu yazınız. */
+
+      function bolunebilme(sayi1, sayi2) {
+        let adet = 0;
+
+        for (var i = 1; i < sayi1; i++) {
+          if (i % sayi2 == 0) {
+            adet++;
+          }
+        }
+
+        return adet;
+      }
+
+      let num1 = prompt("Birnci sayıyı giirniz");
+      let num2 = prompt("İkinci sayıyı giriniz");
+
+      let mesaj = bolunebilme(num1, num2);
+
+      alert(
+        "1 den " +
+          num1 +
+          " e kadar " +
+          num2 +
+          " ile bölünebilen toplam: " +
+          mesaj +
+          " kadar sayı vardır"
+      );
+
+      /* let sonuc = bolunebilme(100, 4);
+
+      alert(sonuc); */
+    </script>
+  </body>
+</html>

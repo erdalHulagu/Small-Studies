@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* soru: kullanicidan pozitif bir tamsayi alip
+       while loop ile sayidan kucuk pozitif tamsayilari yazdiralim */
+
+      //önce while loop ile çözelim:
+
+      var input = prompt("Bir sayı giirniz");
+
+      var sayi = 1;
+
+      while (sayi < input) {
+        console.log(sayi);
+        sayi++;
+      }
+
+      //aynı soruyu do while ile çözelim:
+      sayi = 1;
+
+      do {
+        console.log(sayi);
+        sayi++;
+      } while (sayi < input);
+    </script>
+  </body>
+</html>

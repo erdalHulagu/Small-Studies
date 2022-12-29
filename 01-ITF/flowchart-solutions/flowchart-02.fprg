@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 11:27:42 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjg7MTE6MTc6MDIgUE07Mjg4NA=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjg7MTE6Mjc6NDIgUE07MTsyOTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s1, s2, s3, ort" type="Real" array="False" size=""/>
+            <input variable="s1"/>
+            <input variable="s2"/>
+            <input variable="s3"/>
+            <assign variable="ort" expression="(s1+s2+s3)/3"/>
+            <output expression="ort" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

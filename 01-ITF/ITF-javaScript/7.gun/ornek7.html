@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Eleman sayıları eşit iki dizi içindeki 
+        karşılıklı elemanları toplayıp yeni bir diziye aktaran programı yazınız.
+ 
+      var sayilar1 = [12, 56, 14, 33, 89, 67, 22];
+      var sayilar2 = [124, 342, 3, 56, 80, 1, 426]; */
+
+      /*     1.yöntem
+      var sayilar1 = [12, 56, 14, 33, 89, 67, 22];
+      var sayilar2 = [124, 342, 3, 56, 80, 1, 426];
+      var sayilar3 = [];
+
+      for (var i = 0; i < sayilar1.length; i++) {
+        sayilar3[i] = sayilar1[i] + sayilar2[i];
+      }
+
+      console.log(sayilar3); */
+
+      var sayilar1 = [12, 56, 14, 33, 89, 67, 22];
+      var sayilar2 = [124, 342, 3, 56, 80, 1, 426];
+
+      //TODO:Farklı uzunluktaki dizilerde çalışması için kontrol yapısı eklenecek
+      function arrTopla(arr1, arr2) {
+        var newArr = [];
+        for (var i = 0; i < arr1.length || i < arr2.length; i++) {
+          newArr[i] = arr1[i] + arr2[i];
+        }
+        return newArr;
+      }
+      console.log(arrTopla(sayilar1, sayilar2));
+    </script>
+  </body>
+</html>

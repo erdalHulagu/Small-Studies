@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Üç kutu değeri tanımlayın ve içerisine farklı data tipli değerler 
+      saklayın
+       Kullanıcının sectigi kutuda hangi değerin olduğunu
+        ve kutudaki değerin
+        data tipini kullanıcıya
+        gösteren program
+         */
+      const giris = prompt("Lütfen 1,2,3 numaralı bir kutu numarası giriniz.");
+
+      const kutu1 = "Hogeldin";
+      const kutu2 = 351;
+      const kutu3 = false;
+
+      if (giris == 1) {
+        alert(
+          "Kutunuzda " + kutu1 + " değeri var ve data tipi: " + typeof kutu1
+        );
+      } else if (giris == 2) {
+        alert(
+          "Kutunuzda " + kutu2 + " değeri var ve data tipi: " + typeof kutu2
+        );
+      } else if (giris == 3) {
+        alert(
+          "Kutunuzda " + kutu3 + " değeri var ve data tipi: " + typeof kutu3
+        );
+      } else {
+        alert("Geçerli bir kutu numarası giriniz");
+      }
+    </script>
+  </body>
+</html>

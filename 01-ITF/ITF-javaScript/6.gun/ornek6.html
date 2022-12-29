@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Aşağıdaki öğrencinin sınıfını  "3-A" diye düzenleyin,
+ 3-B sınıfına kullanıcıdan 
+aldığınız bilgilerle yeni bir öğrenci kaydedin
+const student={
+    isim: "Hülya",
+    soyIsim: "Çetin",
+    sinif: "3-B"
+} */
+      const student = {
+        isim: "Hülya",
+        soyIsim: "Çetin",
+        sinif: "3-B",
+      };
+
+      student.sinif = "3-A";
+
+      let ad = prompt("öğrencinin ismini giriniz");
+      let soyAd = prompt("öğrencinin soy ismini giriniz");
+
+      let studentNew = {
+        isim: ad,
+        soyIsim: soyAd,
+        sinif: "3-B",
+      };
+
+      console.log(student);
+      console.log(studentNew);
+    </script>
+  </body>
+</html>

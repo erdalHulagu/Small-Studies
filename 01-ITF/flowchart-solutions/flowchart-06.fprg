@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 06:00:00 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDU6NTM6MDAgUE07Mjg4Ng=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDY6MDA6MDAgUE07MTsyOTg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s1, s2, s3" type="Integer" array="False" size=""/>
+            <output expression="&quot;3 say&#305; giriniz&quot;" newline="True"/>
+            <input variable="s1"/>
+            <input variable="s2"/>
+            <input variable="s3"/>
+            <if expression="s1&gt;s2">
+                <then>
+                    <if expression="s1&gt;s3">
+                        <then>
+                            <output expression="s1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="s3" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="s2&gt;s3">
+                        <then>
+                            <output expression="s2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="s3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

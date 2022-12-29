@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  Vücut kitle indeksi = kilo / boy2
+       , 0 ila 18,4 BMI: Zayıf. ...
+18.5 ila 24.9 BMI: Normal. ...
+25 ila 29.9 BMI: idealin üstü. ...
+30 ila 39.9 BMI: obez. ...
+40+ BMI:morbid obez.
+
+Boy ve kilo değerlerini alıp vücut kitle  indeksini bulup,
+         Yandaki değerlere göre kullanıcıyı bilgilendiren program */
+      const boy = Number(prompt("Boyunuzu metre olarak giirniz"));
+      const kilo = Number(prompt("Kilonuzu giriniz"));
+
+      const vki = kilo / (boy * boy);
+
+      let mesaj;
+
+      if (vki < 18.5) {
+        mesaj = "zayıf";
+      } else if (vki >= 18.5 && vki < 25) {
+        mesaj = "normal";
+      } else if (vki >= 25 && vki < 30) {
+        mesaj = "idealin üstü";
+      } else if (vki >= 30 && vki < 40) {
+        mesaj = "obez";
+      } else if (vki >= 40) {
+        mesaj = "morbid obez";
+      }
+
+      alert(mesaj);
+    </script>
+  </body>
+</html>

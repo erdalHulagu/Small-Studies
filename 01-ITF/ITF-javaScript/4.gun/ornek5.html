@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 100den başlayarak sayılar sırayla toplanmaya başlandığında,
+         genel toplamı 2000 e ulaştıran kaç adet sayı olduğunu bulan 
+         programı yapınız.
+ */
+      var toplam = 0;
+      var baslangic = 100;
+      var sayac = 0;
+      var seri = "";
+
+      while (toplam < 2000 - baslangic) {
+        toplam += baslangic;
+        sayac++;
+        seri += baslangic + ",";
+        baslangic++;
+      }
+
+      console.log("Sayıların toplamı: " + toplam);
+      console.log(sayac + " adet sayı vardır.");
+      console.log(seri);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*        Kullanıcıdan 1'den büyük bir tam sayı girmesini isteyin
+	         ve 1'den girilen tam sayıya kadar olan sayıların
+            karelerinin toplamını
+	         hesaplayan kodu yazınız.
+
+	        Örnek Ekran Çıktısı
+
+	        Girilen sayı=4
+	        Kareler toplamı=14
+
+	     */
+
+      const sayi = prompt("Lütfen 1den büyük bir tamsayı giriniz.");
+
+      let toplam = 0;
+
+      for (var i = 1; i < sayi; i++) {
+        toplam += i * i;
+      }
+
+      console.log("Girilen sayi =" + sayi + "  kareleri toplamı= " + toplam);
+    </script>
+  </body>
+</html>

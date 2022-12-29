@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 07:04:59 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDY6NTU6MjQgUE07Mjg5NQ=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDc6MDQ6NTkgUE07MTszMDA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, sayi" type="Integer" array="False" size=""/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <assign variable="f" expression="1"/>
+            <output expression="&quot;Faktoriyeli hesaplanacak say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="sayi" end="1" direction="dec" step="1">
+                <assign variable="f" expression="f * i"/>
+            </for>
+            <output expression="f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

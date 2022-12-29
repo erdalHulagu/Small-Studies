@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Girilen maaş ın miktarına göre farklı oranlarda zam yapan 
+        programı yazınız.
+1000-2000: %30
+2000-4000: %15
+4000+ : %5
+ */
+      let maas = Number(prompt("Maaşınızı giirniz"));
+
+      if (maas >= 1000 && maas < 2000) {
+        maas *= 1.3;
+      } else if (maas >= 2000 && maas < 4000) {
+        maas *= 1.15;
+      } else if (maas >= 4000) {
+        maas *= 1.05;
+      }
+      alert(maas);
+    </script>
+  </body>
+</html>

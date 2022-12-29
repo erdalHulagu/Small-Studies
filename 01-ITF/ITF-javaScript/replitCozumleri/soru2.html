@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Aşağıdaki personeller dizisindeki devam değeri false olan 
+      personellerin yerine
+       "... isimli personel ayrıldı" yazan bir fonksiyon oluşturup çağıralım.
+       consolda son personeller dizisini yazdır
+
+        let personeller = [
+        {
+          isim: "Ali",
+          soyIsim: "Deniz",
+          maas: 13000,
+          devam: true,
+        },
+        {
+          isim: "Melek",
+          soyIsim: "Tan",
+          maas: 10000,
+          devam: false,
+        },
+        {
+          isim: "Büşra",
+          soyIsim: "Demir",
+          maas: 15000,
+          devam: true,
+        },
+        {
+          isim: "Arda",
+          soyIsim: "Deniz",
+          maas: 12700,
+          devam: false,
+        },
+        {
+          isim: "Mert",
+          soyIsim: "Tan",
+          maas: 10500,
+          devam: false,
+        },
+        {
+          isim: "Bülent",
+          soyIsim: "Demir",
+          maas: 14500,
+          devam: true,
+        },
+      ];
+
+      */
+
+      let personeller = [
+        {
+          isim: "Ali",
+          soyIsim: "Deniz",
+          maas: 13000,
+          devam: true,
+        },
+        {
+          isim: "Melek",
+          soyIsim: "Tan",
+          maas: 10000,
+          devam: false,
+        },
+        {
+          isim: "Büşra",
+          soyIsim: "Demir",
+          maas: 15000,
+          devam: true,
+        },
+        {
+          isim: "Arda",
+          soyIsim: "Deniz",
+          maas: 12700,
+          devam: false,
+        },
+        {
+          isim: "Mert",
+          soyIsim: "Tan",
+          maas: 10500,
+          devam: false,
+        },
+        {
+          isim: "Bülent",
+          soyIsim: "Demir",
+          maas: 14500,
+          devam: true,
+        },
+      ];
+
+      function kayitSil(personel) {
+        for (var i = 0; i < personel.length; i++) {
+          // personel[i].devam==false
+          if (!personel[i].devam) {
+            personel[i] = personel[i].isim + " isimli personel ayrıldı.";
+          }
+        }
+        return personel;
+      }
+
+      kayitSil(personeller);
+
+      console.log(personeller);
+    </script>
+  </body>
+</html>

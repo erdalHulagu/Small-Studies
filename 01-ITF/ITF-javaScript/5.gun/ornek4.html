@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Faktoriyel hesaplayan fonksiyon yazınız. */
+      //5!=5*4*3*2*1
+
+      function faktoriyelHesapla(sayi) {
+        let carpim = 1;
+
+        for (var i = sayi; i >= 1; i--) {
+          carpim = carpim * i;
+        }
+
+        return carpim;
+      }
+
+      let sonuc = faktoriyelHesapla(7);
+
+      alert(sonuc);
+
+      sonuc = faktoriyelHesapla(prompt("Bir sayı giriniz"));
+
+      alert(sonuc);
+    </script>
+  </body>
+</html>

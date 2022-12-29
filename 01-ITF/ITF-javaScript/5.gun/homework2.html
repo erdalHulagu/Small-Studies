@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  Kullanicidan toplamak uzere pozitif sayilar isteyin,
+       islemi bitirmek icin 0’a basmasini soyleyin.
+      	Kullanici yanlislikla negative sayi girerse o sayiyi dikkate almayin
+      	ve “Negatif sayi giremezsiniz” yazdirip basa donun
+      	Kullanici 0’a bastiginda toplam kac pozitif sayi girdigini,
+      	yanlislikla kac negative sayi girdigini
+      	ve girdigi pozitif sayilarin toplaminin kac oldugunu yazdirin.  */
+
+      let sayi = 1;
+      let toplam = 0;
+      let sayacPozitif = 0;
+      let sayacNegatif = 0;
+
+      do {
+        sayi = Number(
+          prompt(
+            "Lütfen pozitif bir tamsayı giriniz; bitirmek için 0'a basınız"
+          )
+        );
+
+        if (sayi < 0) {
+          alert("Negatif sayı giremezsiniz");
+          sayacNegatif++;
+        } else if (sayi > 0) {
+          toplam += sayi;
+          sayacPozitif++;
+        }
+      } while (sayi != 0);
+
+      alert("Yanlışlıkla girilen negatif sayı adeti: " + sayacNegatif);
+      alert("Girilen pozitif sayı adeti:  " + sayacPozitif);
+      alert("Girilen pozitif sayıların toplamı: " + toplam);
+    </script>
+  </body>
+</html>

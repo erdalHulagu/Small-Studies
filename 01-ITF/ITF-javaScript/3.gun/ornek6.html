@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 500 ile 1000 arasında 7 ile ve 3 ile tam bölünebilen sayıların
+         adedini ayrı ayrı bulan programı yazınız. 
+ */
+
+      var adet7 = 0;
+      var adet3 = 0;
+
+      for (var i = 500; i <= 1000; i++) {
+        if (i % 7 == 0) {
+          adet7++;
+        }
+        if (i % 3 == 0) {
+          adet3++;
+        }
+      }
+      alert(
+        "3 ile tam bölünebilen: " +
+          adet3 +
+          " , 7 ile tam bölünebilen " +
+          adet7 +
+          " sayı vardır"
+      );
+
+      console.log(adet3);
+      console.log(adet7);
+    </script>
+  </body>
+</html>

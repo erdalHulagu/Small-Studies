@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 11:16:29 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjg7MTA6NTM6NDIgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjg7MTE6MTY6MjkgUE07MzszMDAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kenar, sonuc" type="Real" array="False" size=""/>
+            <input variable="kenar"/>
+            <assign variable="sonuc" expression="kenar * kenar"/>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

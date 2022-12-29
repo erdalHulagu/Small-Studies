@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-31 01:04:34 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMzE7MDE6MDE6MzggUE07Mjg3OQ=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMzE7MDE6MDQ6MzQgUE07MTsyOTg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, adet" type="Integer" array="False" size=""/>
+            <assign variable="adet" expression="0"/>
+            <for variable="i" start="5" end="250" direction="inc" step="5">
+                <assign variable="adet" expression="adet + 1"/>
+            </for>
+            <output expression="adet" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

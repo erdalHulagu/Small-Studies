@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+ 1-1 1-2 1-3 1-4 1-5 1-6 
+                       *
+ 2-1 2-2 2-3 2-4 2-5 2-6 
+                   *   *     
+ 3-1 3-2 3-3 3-4 3-5 3-6 
+               *   *   *
+ 4-1 4-2 4-3 4-4 4-5 4-6 
+          *   *    *   *
+ 5-1 5-2 5-3 5-4 5-5 5-6 
+      *   *   *   *    *
+ 6-1 6-2 6-3 6-4 6-5 6-6 
+ *    *   *   *   *    *   
+*/
+
+      /* Yandaki gibi yıldızlardan oluşan matrisi oluşturan 
+        programı yazınız.
+     *
+    **
+   ***
+  ****
+ *****
+******
+
+ */
+
+      var sekil = "";
+      const satir = 6,
+        sutun = 6;
+
+      for (var i = 1; i <= satir; i++) {
+        for (var k = 1; k <= sutun; k++) {
+          if (i + k > sutun) {
+            sekil += "*";
+          } else {
+            sekil += "";
+          }
+        }
+        sekil += "\n";
+      }
+      console.log(sekil);
+    </script>
+  </body>
+</html>

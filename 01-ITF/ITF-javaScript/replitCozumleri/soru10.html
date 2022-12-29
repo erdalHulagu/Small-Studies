@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      a) Aşağıdaki personel dizisindeki devam değeri false olanların olmadığı 
+      yeni bir dizi oluşturalım.
+      Bu yeni dizideki
+      b) yaşı 30  üzerinde olanların maaşını %20, 
+        diğerlerini %5 artıralım
+      c) son dizideki personelleri maaş büyüklüklerine göre sıralayalım.  
+
+        var personel = [
+   {adi: "Umut", dogum: 1994, maas: 4000,devam:false},
+   {adi: "Neşe", dogum: 1989, maas: 4000,devam:true},
+   {adi: "Sevgi", dogum: 1985, maas: 4000,devam:true},
+   {adi: "Nehir", dogum: 1985, maas: 4000,devam:false},
+   {adi: "Derya", dogum: 1980, maas: 4000,devam:false},
+   {adi: "Ümit", dogum: 1998, maas: 4000,devam:true},
+   {adi: "Akın", dogum: 1988, maas: 4000,devam:false},
+   {adi: "Bulut", dogum: 1987, maas: 4000,devam:true},
+   {adi: "Deniz", dogum: 1998, maas: 4000,devam:false},
+];
+
+  */
+
+      var personel = [
+        { adi: "Umut", dogum: 1994, maas: 4000, devam: false },
+        { adi: "Neşe", dogum: 1989, maas: 4000, devam: true },
+        { adi: "Sevgi", dogum: 1985, maas: 4000, devam: true },
+        { adi: "Nehir", dogum: 1985, maas: 4000, devam: false },
+        { adi: "Derya", dogum: 1980, maas: 4000, devam: false },
+        { adi: "Ümit", dogum: 1998, maas: 4000, devam: true },
+        { adi: "Akın", dogum: 1988, maas: 4000, devam: false },
+        { adi: "Bulut", dogum: 1987, maas: 4000, devam: true },
+        { adi: "Deniz", dogum: 1998, maas: 4000, devam: false },
+      ];
+
+      var date = new Date();
+      var mevcutYil = date.getFullYear();
+
+      let yeni = [];
+
+      //1.adım
+      for (var i = 0; i < personel.length; i++) {
+        if (personel[i].devam) {
+          yeni[i] = personel[i];
+        } else {
+          yeni[i] = {};
+        }
+      }
+
+      console.log(yeni);
+      //2.adım
+      for (var i = 0; i < yeni.length; i++) {
+        if (yeni[i].maas != NaN) {
+          if (mevcutYil - yeni[i].dogum > 30) {
+            yeni[i].maas = yeni[i].maas * 1.2;
+          } else {
+            yeni[i].maas = yeni[i].maas * 1.05;
+          }
+        }
+      }
+
+      console.log(yeni);
+
+      //3.adım
+      var temp;
+
+      for (var i = 0; i < yeni.length; i++) {
+        for (var j = i + 1; j < yeni.length; j++) {
+          if (yeni[i].maas < yeni[j].maas) {
+            temp = yeni[i];
+            yeni[i] = yeni[j];
+            yeni[j] = temp;
+          }
+        }
+      }
+      console.log(yeni);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let personel = {
+        isim: "Selma",
+        soyIsim: "Kaya",
+        maas: 13000,
+        devam: false,
+      };
+
+      let araba = {
+        marka: "Mercedes",
+        motor: 3,
+        renk: "bej",
+        kiralık: true,
+      };
+
+      let ogrenci = {
+        ad: "Derya Deniz",
+        bolum: "Mühendis",
+        okul: {
+          ad: "Marmara",
+          sehir: "İstanbul",
+        },
+        sinif: 3,
+        odevTeslim: false,
+      };
+
+      console.log("Personelin ismi: " + personel.isim);
+      console.log("Arabanın rengi: " + araba.renk);
+      console.log("Öğrencinin okulunun ismi: " + ogrenci.okul.ad);
+
+      araba.renk = "siyah";
+      console.log(araba);
+
+      personel.maas = 15000;
+      console.log(personel);
+    </script>
+  </body>
+</html>

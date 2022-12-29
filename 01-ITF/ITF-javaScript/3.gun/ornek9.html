@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("Döngü başlıyor"); //1)döngüye girmeden çalışsın istediklerim
+      for (var i = 1; i <= 5; i++) {
+        console.log("i yeni değeriyle döngüde"); //2)sadece ilk döngüde çalışsın istedikleriö
+        for (var k = 1; k <= 3; k++) {
+          console.log("i=" + i + " k=" + k); //3)içteki döngüde çalışsın istediklerim
+        }
+        console.log("-----------------------"); //4)içteki döngü bittikçe çalışsın istediklerim
+      }
+      console.log("ve döngü bitti"); //5)döngü bitince çalışsın istediklerim
+    </script>
+  </body>
+</html>

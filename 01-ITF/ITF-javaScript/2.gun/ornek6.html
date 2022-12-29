@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Kullanıcının girdiği bir sayının 3 ve 5’e tam bölünebilme durumunu 
+        gösteren programı yazınız
+ */
+      const sayi = Number(prompt("Sayı giriniz"));
+      const kalan3 = sayi % 3;
+      const kalan5 = sayi % 5;
+
+      let sonuc = "";
+
+      if (kalan3 + kalan5 == 0) {
+        sonuc = "Sayı 3 ve 5'e tam bölünüyor";
+      } else if (kalan3 == 0) {
+        sonuc = "Sayı 3'e tam bölünüyor";
+      } else if (kalan5 == 0) {
+        sonuc = "Sayı 5'e tam bölünüyor";
+      } else {
+        sonuc = "Sayı 3 ve 5'e tam bölünmüyor";
+      }
+
+      alert(sonuc);
+    </script>
+  </body>
+</html>

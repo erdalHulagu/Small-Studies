@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 05:40:03 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDU6Mjk6MTUgUE07Mjg5NQ=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDU6NDA6MDMgUE07MTsyOTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, ort" type="Integer" array="False" size=""/>
+            <output expression="&quot;S&#305;rayla 3 tane not giriniz&quot;" newline="True"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <assign variable="ort" expression="(n1+n2+n3)/3"/>
+            <if expression="ort&lt;45">
+                <then>
+                    <output expression="&quot;Ortalama:&quot; &amp; ort &amp; &quot; Zay&#305;f&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ort&lt;70">
+                        <then>
+                            <output expression="&quot;Ortalama:&quot; &amp; ort &amp; &quot; &#304;yi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Ortalama:&quot; &amp; ort &amp; &quot; Pekiyi&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

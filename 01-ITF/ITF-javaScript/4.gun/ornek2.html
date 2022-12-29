@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  Soru: Kullanicidan 100’den kucuk bir tamsayi isteyin.
+                1’den baslayarak girilen sayiya kadar tum sayilari yazdirin. Ancak;
+        		- Sayi 3’un kati ise sayi yerine “javascript” yazdirin.
+        		- Sayi 5’in kati ise sayi yerine “ITF” yazdirin.
+        		- Sayi hem 3’un hem 5’in kati ise sayi yerine “For loopu öğrendik” yazdirin. 
+ */
+
+      const sayi = prompt("100den küçük bir tamsayı giriniz");
+      let mesaj = "";
+
+      for (var i = 1; i <= sayi; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+          mesaj += " For loopu öğrendik ";
+        } else if (i % 3 == 0) {
+          mesaj += " javascript ";
+        } else if (i % 5 == 0) {
+          mesaj += " ITF ";
+        } else {
+          mesaj += i + "\n";
+        }
+      }
+      console.log(mesaj);
+    </script>
+  </body>
+</html>

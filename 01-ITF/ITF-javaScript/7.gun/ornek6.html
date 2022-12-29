@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Bir dizi içindeki sayıları genel ortalamasından küçük olan
+         kaç adet sayı olduğunu bulan programı yapınız.
+ 
+ var sayilar = [12, 56, 14, 67, 89, 48, 22]; */
+
+      var sayilar = [12, 56, 14, 67, 89, 48, 22];
+
+      function ortHes(parametre) {
+        let toplam = 0;
+        for (var i = 0; i < parametre.length; i++) {
+          toplam += parametre[i];
+        }
+
+        return toplam / parametre.length;
+      }
+
+      console.log(ortHes([4, 5, 6]));
+
+      function kucukSay(arr, ort) {
+        let sayac = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] < ort) {
+            sayac++;
+          }
+        }
+        return sayac;
+      }
+
+      console.log(kucukSay([11, 5, 8], 9));
+
+      let sayilarOrt = ortHes(sayilar);
+      console.log(sayilarOrt);
+
+      let kucukSayisi = kucukSay(sayilar, sayilarOrt);
+      console.log(kucukSayisi);
+    </script>
+  </body>
+</html>

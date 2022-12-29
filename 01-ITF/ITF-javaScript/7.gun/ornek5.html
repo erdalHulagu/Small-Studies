@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Bir dizi içindeki en büyük sayı ile en küçük sayı 
+        arasındaki farkı bulan programı yapınız.
+ */
+      var sayilar = [12, 56, 14, 67, 89, 33, 22];
+
+      console.log(farkBul([34, 78, 12, 8]));
+      console.log(farkBul(sayilar));
+
+      function farkBul(arr) {
+        let enBuyuk = arr[0];
+        let enKucuk = arr[0];
+        for (var i = 0; i < arr.length; i++) {
+          if (enBuyuk < arr[i]) {
+            enBuyuk = arr[i];
+          }
+
+          if (enKucuk > arr[i]) {
+            enKucuk = arr[i];
+          }
+        }
+        return enBuyuk - enKucuk;
+      }
+    </script>
+  </body>
+</html>

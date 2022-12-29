@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Kullanıcıdan iki sayı alalım Sonra dört işlemden birini 
+seçmesini isteyelim. Seçtiği işleme göre girdiği iki sayıyı ilgili
+ işlemi yapacak fonksiyona gönderelim. 
+ Sonucu alert ile söyleyelim. Devam etmek isterse
+ 1'e bassın ve işlem devam etsin. 
+ Bitirmek isterse sıfıra bassın */
+      let devam = 1;
+      let sonuc = 0;
+
+      while (devam != 0) {
+        var sayi1 = Number(prompt("Lütfen birinci sayıyı giriniz"));
+        var sayi2 = Number(prompt("Lütfen ikinci sayıyı giriniz"));
+        var islem = prompt(
+          "Lütfenyapmak istediğiniz işlemin numarasını giriniz.1-Toplama, 2-Çıkarma,3-Çarpma,4-Bölme"
+        );
+
+        function hesapla() {
+          if (islem == 1) {
+            sonuc = sayi1 + sayi2;
+            alert(sonuc);
+          } else if (islem == 2) {
+            sonuc = sayi1 - sayi2;
+            alert(sonuc);
+          } else if (islem == 3) {
+            sonuc = sayi1 * sayi2;
+            alert(sonuc);
+          } else if (islem == 4) {
+            sonuc = sayi1 / sayi2;
+            alert(sonuc);
+          } else {
+            alert("Lütfen geçerli bir sayı giriniz");
+          }
+          return alert;
+        }
+
+        hesapla();
+        devam = prompt("Devam etmek için 1'e, çıkış için 0'a basın");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Soru 1: Kullanicidan karenin bir
+           kenarini alin ve 
+karenin alanini hesaplayip console’a yazdirin */
+      let kenar = prompt("Karenin bir kenarını giirniz");
+      let kareninAlani = kenar * kenar;
+      alert(
+        "Kenarı " + kenar + " olan karenin alanı: " + kareninAlani + " dır"
+      );
+
+      /* Soru 2: Kullanicidan dikdortgenin 
+      kenarlarini alin ve 
+diktortgenin cevresini hesaplayip
+ console’a yazdirin  */
+
+      let kenar1 = Number(prompt("Diktörtgenin kısa kenarını giriniz."));
+      let kenar2 = Number(prompt("Diktörtgenin uzun kenarını giriniz."));
+      let diktörtgeninCevresi = (kenar1 + kenar2) * 2;
+      alert("Diktörtgenin çevresi: " + diktörtgeninCevresi);
+    </script>
+  </body>
+</html>

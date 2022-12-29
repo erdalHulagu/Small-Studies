@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-31 01:08:07 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDY6NTU6MjQgUE07Mjg5NQ=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMzE7MDE6MDg6MDcgUE07MjsyOTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, t" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="999"/>
+            <assign variable="t" expression="0"/>
+            <while expression="s!=0">
+                <input variable="s"/>
+                <assign variable="t" expression="t + s"/>
+            </while>
+            <output expression="t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

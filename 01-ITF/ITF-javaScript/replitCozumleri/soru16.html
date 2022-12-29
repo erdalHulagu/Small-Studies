@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* a. Kullanıcının girdiği metnin uzunluğunu bulup, çıkan 
+        sonucun faktöriyelini hesaplayalım. (fonksiyon ile) 
+        b.0'dan çıkan sonuca kadar 4ün katı olan
+         sayıları bir diziye yerleştirip , 
+         diziyi konsolda gösterelim.
+         
+         Diziye veri ekleme push() metodu ile yapılır.(googlama becerimiz gelişsin diye:))
+         */
+      const input = prompt("Bir metin giriniz");
+      const inputUzunluk = Number(input.length);
+
+      let result = 1;
+
+      function faktoriyelBul(sayi) {
+        for (var i = sayi; i >= 1; i--) {
+          result *= i;
+        }
+        return result;
+      }
+
+      let faktoriyel = faktoriyelBul(inputUzunluk);
+
+      var dizi = [];
+
+      for (var k = 1; k <= faktoriyel; k++) {
+        if (k % 4 == 0) {
+          dizi.push(k);
+        }
+      }
+      console.log(dizi);
+    </script>
+  </body>
+</html>

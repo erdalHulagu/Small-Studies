@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="scott"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 06:52:03 PM"/>
+        <attribute name="created" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDY6MzA6MjcgUE07Mjg5MQ=="/>
+        <attribute name="edited" value="c2NvdHQ7REVTS1RPUC1MUDFMMERKOzIwMjItMTAtMjk7MDY6NTI6MDMgUE07MTsyOTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="nt, ort, toplam" type="Real" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="1" end="20" direction="inc" step="1">
+                <output expression="i &amp; &quot;. &#246;&#287;rencinin notunu giriniz&quot;" newline="True"/>
+                <input variable="nt"/>
+                <assign variable="toplam" expression="toplam + nt"/>
+            </for>
+            <assign variable="ort" expression="toplam / 20"/>
+            <output expression="ort" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

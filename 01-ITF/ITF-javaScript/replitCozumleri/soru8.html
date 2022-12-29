@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*   soru: Kullanicidan bir sayi alin ve
+       bu sayinin rakamlari toplamini yazdirin */
+
+      let input = prompt("Bir sayı giriniz");
+      let rakam = 0;
+      let rakamlarToplami = 0;
+
+      while (input > 0) {
+        rakam = input % 10;
+        rakamlarToplami += rakam;
+        input = Math.floor(input / 10);
+      }
+      alert(rakamlarToplami);
+    </script>
+  </body>
+</html>

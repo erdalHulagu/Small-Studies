@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      let sayiArr=[231,45,675,89,76,345,145,278,98,203,430]
+
+        ## Steps
+        1. Yukarıdaki dizideki sayıların ortalamasını bulalım(fonksiyon ile)
+        2. ortalamadan küçük olan sayıları diziden çıkaralım
+        3. yeni dizinin ortalamasını alalım
+        4. ortalamadan küçük olan sayıları diziden çıkaralım
+        5. bu işlemi dizide son bir sayı kalana kadar tekrarlayalım
+
+
+         Diziye veri ekleme push() metodu ile yapılır.(googlama becerimiz gelişsin diye:))
+
+      */
+
+      let sayiArr = [231, 45, 675, 89, 76, 345, 145, 278, 98, 203, 430];
+      let tasiyiciDizi = [];
+
+      let toplam = 0;
+
+      function ortHes(arr) {
+        for (var i = 0; i < arr.length; i++) {
+          toplam += arr[i];
+        }
+        return Math.floor(toplam / arr.length);
+      }
+
+      console.log(ortHes(sayiArr));
+
+      function yerlestir(arr1, arr2) {
+        let ort = ortHes(arr1);
+
+        for (var i = 0; i < arr1.length; i++) {
+          if (arr1[i] > ort) {
+            arr2.push(arr1[i]);
+          }
+        }
+
+        return arr2;
+      }
+
+      yerlestir(sayiArr, tasiyiciDizi);
+
+      let sayac = 0;
+
+      while (sayiArr.length !== 1) {
+        yerlestir(sayiArr, tasiyiciDizi);
+        sayiArr = tasiyiciDizi;
+
+        tasiyiciDizi = [];
+        sayac++;
+        console.log(sayiArr);
+      }
+      console.log(sayac);
+      console.log(sayiArr);
+    </script>
+  </body>
+</html>

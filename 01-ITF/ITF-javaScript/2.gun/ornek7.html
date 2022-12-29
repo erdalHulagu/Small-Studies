@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Günün menüsünden kullanıcının tercih ettiği
+       seçeneğe göre bilgi verme
+       çorba: "ezogelin";
+       yemek: "karnıyarık";
+       içecek: "reyhan şerbeti";
+       tatlı "künefe";
+       */
+      const tercih = prompt(
+        "Bir sayı giriniz: 1-çorba,2-yemek,3-içecek,4-tatlı"
+      );
+      let mesaj;
+      if (tercih == 1) {
+        mesaj = "ezogelin";
+      } else if (tercih == 2) {
+        mesaj = "karnıyarık";
+      } else if (tercih == 3) {
+        mesaj = "reyhan şerbeti";
+      } else if (tercih == 4) {
+        mesaj = "künefe";
+      }
+      alert(mesaj);
+    </script>
+  </body>
+</html>

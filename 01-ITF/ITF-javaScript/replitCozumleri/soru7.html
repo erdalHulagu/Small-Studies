@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*   
+aşağıdaki personelleri maaş büyüklüklerine göre sıralayınız.
+
+let personel4 = {
+        isim: "Arda",
+        soyIsim: "Deniz",
+        maas: 12700,
+      };
+      let personel5 = {
+        isim: "Mert",
+        soyIsim: "Tan",
+        maas: 10500,
+      };
+      let personel6 = {
+        isim: "Bülent",
+        soyIsim: "Demir",
+        maas: 14500,
+      }; */
+
+      /* let personel4 = {
+        isim: "Arda",
+        soyIsim: "Deniz",
+        maas: 12700,
+      };
+      let personel5 = {
+        isim: "Mert",
+        soyIsim: "Tan",
+        maas: 10500,
+      };
+      let personel6 = {
+        isim: "Bülent",
+        soyIsim: "Demir",
+        maas: 14500,
+      }; */
+
+      /*1.yöntem: for döngüsü kullanmadan */
+      /*  let buyukMaas = 0;
+      let dusukMaas = 0;
+      let ortaMaas = 0;
+
+      if (personel4.maas > personel5.maas && personel4.maas > personel6.maas) {
+        buyukMaas = personel4;
+        if (personel5.maas > personel6.maas) {
+          dusukMaas = personel6;
+          ortaMaas = personel5;
+        } else {
+          dusukMaas = personel5;
+          ortaMaas = personel6;
+        }
+      } else if (
+        personel6.maas > personel5.maas &&
+        personel6.maas > personel4.maas
+      ) {
+        buyukMaas = personel6;
+
+        if (personel5.maas > personel4.maas) {
+          dusukMaas = personel4;
+          ortaMaas = personel5;
+        } else {
+          dusukMaas = personel5;
+          ortaMaas = personel4;
+        }
+      } else if (
+        personel5.maas > personel6.maas &&
+        personel5.maas > personel4.maas
+      ) {
+        buyukMaas = personel5;
+
+        if (personel6.maas > personel4.maas) {
+          dusukMaas = personel4;
+          ortaMaas = personel6;
+        } else {
+          dusukMaas = personel6;
+          ortaMaas = personel4;
+        }
+      }
+
+      console.log(buyukMaas.isim, ortaMaas.isim, dusukMaas.isim); */
+
+      /* 2.yöntem: for döngüsü ile */
+      /*  let personel = [
+        {
+          isim: "Arda",
+          soyIsim: "Deniz",
+          maas: 12700,
+        },
+        {
+          isim: "Mert",
+          soyIsim: "Tan",
+          maas: 10500,
+        },
+        {
+          isim: "Bülent",
+          soyIsim: "Demir",
+          maas: 14500,
+        },
+      ];
+
+      let temp; //üçüncü bardak
+      for (var i = 0; i < personel.length; i++) {
+        for (var j = i + 1; j < personel.length; j++) {
+          if (personel[i].maas < personel[j].maas) {
+            temp = personel[i];
+            personel[i] = personel[j];
+            personel[j] = temp;
+          }
+        }
+      }
+
+      console.log(personel);
+ */
+
+      let personel4 = { isim: "Arda", soyIsim: "Deniz", maas: 12700 };
+      let personel5 = { isim: "Mert", soyIsim: "Tan", maas: 10500 };
+      let personel6 = { isim: "Bülent", soyIsim: "Demir", maas: 14500 };
+      let personeller = [personel4, personel5, personel6];
+      let sira;
+      for (var i = 0; i < personeller.length; i++) {
+        for (var j = i + 1; j < personeller.length; j++) {
+          if (personeller[i].maas < personeller[j].maas) {
+            sira = personeller[j].maas;
+            personeller[j].maas = personeller[i].maas;
+            personeller[i].maas = sira;
+          }
+        }
+      }
+      console.log(personeller);
+    </script>
+  </body>
+</html>
