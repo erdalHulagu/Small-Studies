@@ -15,8 +15,10 @@ body {
   background-position: center center;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 0;
   padding: 20px;
   position: relative;
 }
@@ -58,8 +60,9 @@ body {
   flex: 3;
   padding: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
   gap: 2rem;
 }
 .weather-card > .right ul.status {
@@ -70,6 +73,9 @@ body {
 .weather-card > .right ul.status li {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 0;
 }
 .weather-card > .right ul.days {
   list-style-type: none;
@@ -77,11 +83,17 @@ body {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 0;
   text-align: center;
 }
 .weather-card > .right ul.days li {
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
   flex-direction: column;
+  gap: 0;
   padding: 2rem 1rem;
   border-radius: 20px;
 }

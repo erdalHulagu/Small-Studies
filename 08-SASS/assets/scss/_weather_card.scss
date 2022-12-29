@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "mixins" as m;
 
 .weather-card{
     background-color: v.$color1;
@@ -12,9 +13,9 @@
         background-size: cover;
         background-position: center center;
         border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include m.flex();
+
+  
         padding: 20px;
         position: relative;
 
@@ -61,33 +62,23 @@
     > .right{
         flex:3;
         padding:20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap:2rem;
+        @include m.flex($gap: 2rem);
 
         ul.status{
-            list-style-type: none;
-            padding: 0;
-            margin:0;
+           @include m.reset-list;
 
             li{
-                display: flex;
-                justify-content: space-between;
+                @include m.flex($fd: row);
             }           
         }
 
         ul.days{
-            list-style-type: none;
-            padding: 0;
-            margin:0;
-            display: flex;
-            justify-content: space-between;
+            @include m.reset-list;
+            @include m.flex($fd: row);
             text-align: center;
 
             li{
-                display: flex;
-                flex-direction: column;
+                @include m.flex();
                 padding: 2rem 1rem;
                 border-radius: 20px;
 
