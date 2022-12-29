@@ -1,0 +1,44 @@
+:root{
+    --color1: rgb(130, 97, 238);
+    --color2: rgb(255, 88, 158);
+    --color3: rgba(130, 97, 238, 0.8);
+    --color4: rgba(255, 88, 158, 0.5);
+}
+
+body{
+    font-family: Raleway;
+}
+
+
+/************************* NAVBAR *************************/
+nav.main-navbar{
+    border-radius: 3rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgb(228, 228, 228);
+}
+
+nav.main-navbar .navbar-nav{
+    gap:1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .show>.nav-link {
+    color: var(--color2);
+}
+
+/************************* CAROUSEL SLIDER *************************/
+
+.main-slider .carousel-item::before{
+    content: "";
+    background-color: var(--color3);
+    position: absolute;
+    top:0; left:0; right:0; bottom: 0;
+    z-index: 5;
+}
+
+.main-slider .carousel-caption{
+    z-index: 6;
+}
