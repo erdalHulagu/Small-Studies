@@ -7,9 +7,10 @@
     border-radius: 20px;
     color: v.$color2;
     display: flex;
+    flex-wrap: wrap;
 
     > .left{
-        flex: 2;
+        flex: 2 1 240px;
         @include m.bg(image, v.$card-bg-image);
         background-size: cover;
         background-position: center center;
@@ -61,7 +62,7 @@
     }
 
     > .right{
-        flex:3;
+        flex:3 1 360px;
         padding:20px;
         @include m.flex($gap: 2rem);
 
@@ -76,6 +77,7 @@
         ul.days{
             @include m.reset-list;
             @include m.flex($fd: row);
+            flex-wrap: wrap;
             text-align: center;
 
             li{
