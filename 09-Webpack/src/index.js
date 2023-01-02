@@ -4,7 +4,7 @@ import "bootstrap"; // Boostrap javascript dosyası
 
 
 document.getElementById("btnClick").addEventListener("click", () => {
-  alert("Hello Webpack 1");
+  alert("Hello Webpack");
 
   setItem(
     "token",
