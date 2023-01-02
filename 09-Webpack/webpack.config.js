@@ -3,7 +3,7 @@ module.exports = {
   mode: "production",
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
+    filename: "main.[contenthash].js",
     path: path.resolve(__dirname, "dist"),
   },
   module:{
