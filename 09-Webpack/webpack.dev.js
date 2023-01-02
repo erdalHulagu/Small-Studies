@@ -8,10 +8,10 @@ module.exports = merge(common, {
   mode: "development",
   devServer:{
     watchFiles: ['src/**/*.html', 'src/**/*.scss'],
-    
+
   },
   output: {
-    filename: "main.js",
+    filename: "./js/[name].js",
     path: path.resolve(__dirname, "dist"),
     clean: false
   },
