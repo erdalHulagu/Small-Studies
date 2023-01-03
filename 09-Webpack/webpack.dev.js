@@ -6,7 +6,7 @@ const path = require("path");
 module.exports = merge(common, {
   mode: "development",
   devServer: {
-    watchFiles: ["src/**/*.html", "src/**/*.scss"],
+    watchFiles: ["src/**/*.html", "src/**/*.scss"]
   },
   output: {
     filename: "./js/[name].js",
