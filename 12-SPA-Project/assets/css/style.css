@@ -1,8 +1,8 @@
 :root{
     --color1: rgb(130, 97, 238);
     --color2: rgb(255, 88, 158);
-    --color3: rgba(130, 97, 238, 0.8);
-    --color4: rgba(255, 88, 158, 0.5);
+    --color3: rgba(130, 97, 238, 0.95);
+    --color4: rgba(255, 88, 158, 0.95);
     --color5: rgb(237, 237, 237);
     --color6: rgb(157, 157, 157);
     --color7: rgb(33, 33, 33);
@@ -292,3 +292,67 @@ Biz aynısını kullanarak bootstrap stilini ezdik
 }
 
 
+/************************* STATISTICS *************************/
+
+.statistics{
+    background-image: url("../img/banner-02.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+    text-align: center;
+    color: var(--color5);
+}
+
+.statistics::after{
+    content: "";
+    background-image: linear-gradient(30deg, var(--color4), var(--color3));
+    position: absolute;
+    top:0; left:0; right:0; bottom: 0;
+    z-index: 1;
+}
+
+.statistics > .container{
+    position: relative;
+    z-index: 2;
+}
+
+.statistics h4{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.statistics span{
+    font-size: 0.9rem;
+}
+
+
+/************************* BLOG ENTRIES *************************/
+.blog-entries{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+
+.blog-entries img{
+    width:100%;
+    height: auto;
+}
+
+.blog-entries [class^="col"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+.blog-entries [class^="col"] h3{
+    font-size: 1.2rem;
+}
+
+.blog-entries [class^="col"] p {
+    color: var(--color6);
+  }
