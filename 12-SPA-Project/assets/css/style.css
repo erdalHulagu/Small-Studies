@@ -130,6 +130,17 @@ Biz aynısını kullanarak bootstrap stilini ezdik
     z-index: 99;
 }
 
+@media(max-width: 1200px){
+    .highlights{
+        transform: translateY(0);
+        margin-top:4rem;
+        margin-bottom:8rem;
+    }
+}
+
+.highlights .card{
+    height: 100%;
+}
 
 .highlights .card .card-body{
     display: flex;
@@ -157,6 +168,12 @@ Biz aynısını kullanarak bootstrap stilini ezdik
 
 
 /************************* ABOUT US *************************/
+@media(max-width: 768px){
+    .about-us{
+        text-align: center;
+    }
+}
+
 .about-us .icon{
     font-size: 15rem;
     color: var(--color1);
