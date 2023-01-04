@@ -128,6 +128,7 @@ Biz aynısını kullanarak bootstrap stilini ezdik
     transform: translateY(-50%);
     position: relative;
     z-index: 99;
+    margin-bottom: -7rem;
 }
 
 @media(max-width: 1200px){
@@ -168,6 +169,12 @@ Biz aynısını kullanarak bootstrap stilini ezdik
 
 
 /************************* ABOUT US *************************/
+.about-us{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+}
+
 @media(max-width: 768px){
     .about-us{
         text-align: center;
@@ -202,8 +209,8 @@ Biz aynısını kullanarak bootstrap stilini ezdik
 
 
 .work-process{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     position: relative;
     background-image: url("../img/banner-01.jpg");
     margin-top:5rem;
@@ -246,8 +253,8 @@ Biz aynısını kullanarak bootstrap stilini ezdik
 /************************* TESTIMONALS *************************/
 
 .testimonals{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .testimonals i{
@@ -268,8 +275,8 @@ Biz aynısını kullanarak bootstrap stilini ezdik
 
 /************************* PRICING PLAN *************************/
 .pricing-plan{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     background-color: var(--color5);
 }
 
@@ -317,8 +324,8 @@ Biz aynısını kullanarak bootstrap stilini ezdik
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     position: relative;
     text-align: center;
     color: var(--color5);
@@ -349,8 +356,8 @@ Biz aynısını kullanarak bootstrap stilini ezdik
 
 /************************* BLOG ENTRIES *************************/
 .blog-entries{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     text-align: center;
 }
 

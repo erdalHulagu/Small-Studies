@@ -26,7 +26,8 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body id="home">
+  
     <header class="container fixed-top mt-3">
       <nav class="navbar navbar-expand-xl bg-light-subtle main-navbar">
         <div class="container-fluid">
@@ -59,19 +60,19 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about-us">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#work">Work Process</a>
+                <a class="nav-link" href="#work-process">Work Process</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#testimonals">Testimonals</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pricing">Pricing Tables</a>
+                <a class="nav-link" href="#pricing-plan">Pricing Tables</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
+                <a class="nav-link" href="#blog-entries">Blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -146,8 +147,8 @@
         </div>
       </div>
     </section>
-
-    <section class="container about-us">
+  
+    <section id="about-us" class="container about-us">
       <div class="row g-5">
         <div class="col-md-6">
           <i class="fa-solid fa-comments icon"></i>
@@ -177,7 +178,7 @@
       </div>
     </section>
 
-    <section class="container-fluid work-process">
+    <section id="work-process" class="container-fluid work-process">
       <div class="container">
         <div class="section-header light">
           <h3>Work Process</h3>
@@ -248,7 +249,7 @@
       </div>
     </section>
 
-    <section class="container testimonals">
+    <section id="testimonals" class="container testimonals">
       <div class="section-header">
         <h3>What do they say?</h3>
         <p>
@@ -257,7 +258,7 @@
         </p>
       </div>
 
-      <div class="row">
+      <div class="row g-5 row-cols-1 row-cols-md-3">
         <div class="col">
           <div class="card">
             <div class="card-body">
@@ -306,7 +307,7 @@
       </div>
     </section>
 
-    <section class="container-fluid pricing-plan">
+    <section id="pricing-plan" class="container-fluid pricing-plan">
       <div class="container">
         <div class="section-header">
           <h3>Pricing Plans</h3>
@@ -316,7 +317,7 @@
           </p>
         </div>
 
-        <div class="row">
+        <div class="row g-5 row-cols-1 row-cols-md-3">
           <div class="col">
             <div class="card">
               <div class="card-body">
@@ -381,39 +382,39 @@
       </div>
     </section>
 
-    <section class="container-fluid statistics">
+    <section id="statistics" class="container-fluid statistics">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col">
-            <h4>126</h4>
+          <div class="col-4 col-md">
+            <h4 class="counter" data-count="33">0</h4>
             <span>Projects</span>
           </div>
-          <div class="col">
-            <img src="assets/img/circle-dec.png" alt="" />
+          <div class="col-4 col-md">
+            <img src="assets/img/circle-dec.png" alt="" class="img-fluid" />
           </div>
-          <div class="col">
-            <h4>126</h4>
+          <div class="col-4 col-md">
+            <h4 class="counter" data-count="66">0</h4>
             <span>Projects</span>
           </div>
-          <div class="col align-self-start">
-            <img src="assets/img/circle-dec.png" alt="" />
+          <div class="col-md align-self-start  d-none d-md-block">
+            <img src="assets/img/circle-dec.png" alt="" class="img-fluid"/>
           </div>
-          <div class="col">
-            <h4>126</h4>
+          <div class="col-4  col-md">
+            <h4 class="counter" data-count="88">0</h4>
             <span>Projects</span>
           </div>
-          <div class="col">
-            <img src="assets/img/circle-dec.png" alt="" />
+          <div class="col-4 col-md">
+            <img src="assets/img/circle-dec.png" alt="" class="img-fluid"/>
           </div>
-          <div class="col">
-            <h4>126</h4>
+          <div class="col-4  col-md">
+            <h4 class="counter" data-count="35">0</h4>
             <span>Projects</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container blog-entries">
+    <section id="blog-entries" class="container blog-entries">
       <div class="section-header">
         <h3>Blog Entries</h3>
         <p>
@@ -422,8 +423,8 @@
         </p>
       </div>
 
-      <div class="row g-4 row-cols-1 row-cols-lg-3">
-        <div class="col">
+      <div class="row g-4">
+        <div class="col-sm-12 col-md-4">
           <img src="assets/img/blog-item-01.png" class="img-fluid" alt="" />
           <h3>Vivamus ac vehicula dui</h3>
           <p>
@@ -433,7 +434,7 @@
           </p>
           <button class="btn btn-primary">Read More</button>
         </div>
-        <div class="col">
+        <div class="col-sm-6 col-md-4">
           <img src="assets/img/blog-item-02.png" class="img-fluid" alt="" />
           <h3>Vivamus ac vehicula dui</h3>
           <p>
@@ -443,7 +444,7 @@
           </p>
           <button class="btn btn-primary">Read More</button>
         </div>
-        <div class="col">
+        <div class="col-sm-6 col-md-4">
           <img src="assets/img/blog-item-03.png" class="img-fluid" alt="" />
           <h3>Vivamus ac vehicula dui</h3>
           <p>
@@ -456,7 +457,7 @@
       </div>
     </section>
 
-    <section class="container-fluid contact">
+    <section id="contact" class="container-fluid contact">
       <div class="container">
         <div class="section-header">
           <h3>Talk To Us</h3>
@@ -482,14 +483,18 @@
             </div>
           </div>
           <div class="col-lg-8">
-            <form class="row g-4">
+            <form id="contactForm" class="row g-4 needs-validation" novalidate>
               <div class="col-md-6">
                 <input
                   type="text"
                   class="form-control"
                   id="txtName"
                   placeholder="Full name"
+                  required
                 />
+                <div class="invalid-feedback">
+                  Please enter your name.
+                </div>
               </div>
               <div class="col-md-6">
                 <input
@@ -497,7 +502,11 @@
                   class="form-control"
                   id="txtEmail"
                   placeholder="Email address"
+                  required
                 />
+                <div class="invalid-feedback">
+                  Please enter your email.
+                </div>
               </div>
               <div class="col-12">
                 <textarea
@@ -505,8 +514,11 @@
                   id="txtMessage"
                   placeholder="Your message"
                   rows="7"
+                  required
                 ></textarea>
-
+                <div class="invalid-feedback">
+                  Please enter your message
+                </div>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Sign in</button>
@@ -538,5 +550,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
