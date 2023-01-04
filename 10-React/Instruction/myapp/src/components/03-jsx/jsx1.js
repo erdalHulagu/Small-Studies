@@ -1,11 +1,14 @@
 import React from "react";
 
 const Jsx1 = () => {
+  const message =
+    "Class isimleri className içinde verilir ve attribute lar camelCase olarak yaızılır";
+
   return (
-    <header>
-      <div>Tüm elementler tek bir root element içinde olmalı</div>
-      <div className="title">Class isimleri className içinde verilir ve attribute lar camelCase olarak yaızılır</div>
-    </header>
+    <ul>
+      <li>Tüm elementler tek bir root element içinde olmalı</li>
+      <li className="title">{message}</li>
+    </ul>
   );
 };
 
