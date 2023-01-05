@@ -4,22 +4,22 @@ import Jsx2 from "./components/03-jsx/jsx2";
 import Jsx3 from "./components/03-jsx/jsx3";
 import Jsx4 from "./components/03-jsx/jsx4";
 import Jsx5 from "./components/03-jsx/jsx5";
+import Jsx6 from "./components/03-jsx/jsx6";
 
 const App = () => {
-  return(
+  return (
     <div>
-
-{/*         
+      {/*         
         <HelloWorld/>
         <Jsx1/>
         <Jsx2/>
         <Jsx3/>
         <Jsx4/>
- */}        
-  
-  <Jsx5/>
+        <Jsx5/>
+ */}
 
+      <Jsx6 />
     </div>
-  )
-}
+  );
+};
 export default App;
