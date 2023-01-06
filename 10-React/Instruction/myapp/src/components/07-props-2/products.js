@@ -2,9 +2,12 @@ import React from "react";
 import ProductCard from "./product-card";
 
 const Products = () => {
+    
   return (
     <div>
-      <ProductCard>
+
+
+      <ProductCard name="Ali">
         <h2>Sony Display</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic beatae
