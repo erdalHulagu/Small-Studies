@@ -1,13 +1,38 @@
+
+/*-----------------------------------------------------------------*/
+/*                      GLOBAL STYLES                              */
+/*-----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #1a1a1a;
+  background-color: #5352d4;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+li {
+  padding: 0 0 10px;
+}
+
+/*
+/*-----------------------------------------------------------------*/
+/*                      LAYOUT                                     */
+/*-----------------------------------------------------------------*/
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
 }

@@ -1,0 +1,14 @@
+
+.header .avatar {
+    overflow: hidden;
+    width: 165px;
+    height: 165px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.header .avatar img {
+    width: 100%;
+}
