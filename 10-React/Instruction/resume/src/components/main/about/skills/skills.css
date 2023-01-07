@@ -20,7 +20,7 @@
 }
 
 
-.progress {
+.about .progress {
     height: 4px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -30,7 +30,7 @@
     box-shadow: none;
 }
 
-.progress-bar {
+.about .progress-bar {
     float: left;
     width: 0;
     height: 100%;

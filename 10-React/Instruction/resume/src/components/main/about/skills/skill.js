@@ -1,20 +1,20 @@
 import React from "react";
 
-const Skill = () => {
+const Skill = ({name, value}) => {
   return (
     <>
       <div className="skill-info clearfix">
-        <h3 className="pull-left">Photoshop</h3>
-        <span className="pull-right">90%</span>
+        <h3 className="pull-left">{name}</h3>
+        <span className="pull-right">{value}%</span>
       </div>
       <div className="progress">
         <div
           className="progress-bar"
           role="progressbar"
-          aria-valuenow="90"
+          aria-valuenow={value}
           aria-valuemin="0"
           aria-valuemax="100"
-          style={{ width: "90%" }}
+          style={{ width: `${value}%` }}
         ></div>
       </div>
     </>
