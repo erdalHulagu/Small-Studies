@@ -28,6 +28,27 @@ li {
   padding: 0 0 10px;
 }
 
+.btn-default {
+  color: #FFF;
+  background-color: #5655da;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 8px 16px;
+border-radius: 3px;
+  position: relative;
+}
+
+
+
+.btn-default:hover {
+  color: #FFF;
+  background-color: #5655da;
+  border: 0;
+}
+
+
 /*
 /*-----------------------------------------------------------------*/
 /*                      LAYOUT                                     */
@@ -35,4 +56,10 @@ li {
 .wrapper {
   width: 1000px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper {
+      width: 100%;
+  }
 }
