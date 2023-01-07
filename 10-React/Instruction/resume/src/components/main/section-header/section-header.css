@@ -1,0 +1,60 @@
+.main-content section .section-header {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main-content section .section-header h2 {
+    color: #f74470;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+	letter-spacing: 3px;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+.main-content section .section-header-light {
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-content section .section-header-light h2 {
+    color: #FFF !important;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 20px;
+    position: relative;
+}
+
+.main-content section .section-header-light h2:before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    bottom: 10px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-left: solid 3px #FFF !important;
+    border-top: solid 3px #FFF !important;
+}
+
+.main-content section .section-header-light h2:after {
+    content: '';
+    position: absolute;
+    background: transparent;
+    bottom: -10px;
+    right: -17px;
+    height: 16px;
+    width: 16px;
+    border-right: solid 3px #FFF !important;
+    border-bottom: solid 3px #FFF !important;
+}
+

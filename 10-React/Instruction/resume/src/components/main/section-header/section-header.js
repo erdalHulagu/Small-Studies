@@ -1,4 +1,5 @@
 import React from "react";
+import "./section-header.css";
 
 const SectionHeader = () => {
   return (
