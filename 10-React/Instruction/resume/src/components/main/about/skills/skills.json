@@ -2,5 +2,7 @@
     {"tool": "Photoshop", "rate":"90"},
     {"tool": "Illustrator", "rate":"80"},
     {"tool": "InDesign", "rate":"45"},
-    {"tool": "Corel Draw", "rate":"60"}
+    {"tool": "Corel Draw", "rate":"60"},
+    {"tool": "React", "rate":"80"},
+    {"tool": "Redux", "rate":"75"}
 ]

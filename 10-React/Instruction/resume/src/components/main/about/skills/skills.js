@@ -11,7 +11,7 @@ const Skills = () => {
           <div className="col-md-6 col-sm-6 col-xs-12 item" key={index}>
             <Skill name={skill.tool} value={skill.rate} />
           </div>
-        ))}
+        ) )}
       </div>
     </div>
   );
