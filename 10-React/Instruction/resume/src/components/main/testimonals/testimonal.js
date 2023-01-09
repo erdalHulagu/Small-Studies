@@ -15,6 +15,10 @@ const Testimonal = ({ img, message, name }) => {
         </div>
       </div>
     </div>
+
+    
+
+
   );
 };
 
