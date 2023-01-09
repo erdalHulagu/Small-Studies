@@ -13,7 +13,7 @@ const Header = () => {
   const handleMenu = () => { 
     if(!isOpen){
       refMenu.current.style.transform = "translateX(0)";
-      setIsOpen(true);2
+      setIsOpen(true);
     }
     else{
       refMenu.current.style.transform = "translateX(-260px)";
