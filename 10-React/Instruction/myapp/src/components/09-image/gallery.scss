@@ -1,0 +1,14 @@
+.gallery{
+    display: flex;
+    gap:1rem;
+    
+
+    > div{
+        flex:1 1 300px;
+    }
+
+    img{
+        width:100%;
+        height: auto;
+    }
+}
