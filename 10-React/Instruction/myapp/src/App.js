@@ -15,6 +15,7 @@ import Products from "./components/07-props-2/products";
 import Clock2 from "./components/08-clock2/clock2";
 import Gallery from "./components/09-image/gallery";
 import Image from "./components/09-image/image";
+import ProfileCard from "./components/10-profile-card/profile-card";
 
 const App = () => {
 
@@ -38,9 +39,10 @@ const App = () => {
         <Products/>
         <Clock2 textColor="#56ff33" bgColor="#0012C3"/>
         <Image/>
+        <Gallery/>
  */}
 
-          <Gallery/>
+          <ProfileCard avatar="profile.jpg" name="Ali Gel" location="Turkey, Istanbul" shot="3" followers="23432" following="234"/>
       
     </div>
   );
