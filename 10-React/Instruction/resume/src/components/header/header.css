@@ -19,3 +19,22 @@
         transition: all .3s ease-in-out;
     }
 }
+
+@media only screen and (max-height: 600px) {
+    .header .name {
+        margin: 15px 0;
+    }
+
+    .header .main-nav ul li {
+        padding-bottom: 10px;
+    }
+
+    .header .social-icons {
+        margin: 0 0 15px;
+    }
+
+    .header .copyright {
+        bottom: -18px;
+        position: relative;
+    }
+}

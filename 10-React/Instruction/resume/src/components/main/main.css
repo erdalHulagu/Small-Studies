@@ -3,6 +3,16 @@
     width: 740px;
 }
 
+@media only screen and (max-width: 991px) {
+    .main-content {
+        width: 100%;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+}
+
 .main-content p {
     color: #2c2c2c;
     font-family: 'Poppins', sans-serif;
@@ -17,12 +27,9 @@
     border-bottom: solid 1px #EEE;
 }
 
-@media only screen and (max-width: 991px) {
-    .main-content {
-        width: 100%;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
+@media only screen and (max-width: 480px) {
+    .main-content section {
+        padding: 60px 30px;
     }
 }
+

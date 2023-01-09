@@ -1,15 +1,20 @@
 import React from 'react';
 import About from './about/about';
-import Intro from './about/intro/intro';
+import Educations from './educations/educations';
 import Experiences from './experiences/experiences';
+import Testimonals from './testimonals/testimonals';
 import "./main.css";
-import SectionHeader from './section-header/section-header';
+import GetInTouch from './getintouch/get-in-touch';
+
 
 const Main = () => {
   return (
     <div className="main-content pull-right">
         <About/>
         <Experiences/>
+        <Educations/>
+        <Testimonals/>
+        <GetInTouch/>
     </div>
   )
 }
