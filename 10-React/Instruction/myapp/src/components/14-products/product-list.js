@@ -6,9 +6,9 @@ import products from "./products.json";
 const ProductList = () => {
   return (
     <Container>
-      <Row>
+      <Row className="g-5 mt-5">
         {products.map((product) => (
-          <Col key={product.id}>
+          <Col key={product.id} md={6} lg={4} xl={3}>
             <Product {...product} />
           </Col>
         ))}
