@@ -4,10 +4,13 @@ const Events = () => {
   // Event handler
   const sayHello1 = () => {
     alert("Hello");
+
+    console.log(sayHello2);
   };
 
   const sayHello2 = (name) => {
     alert(`Hello ${name}`);
+    return `Hello ${name}`
   };
 
   return (

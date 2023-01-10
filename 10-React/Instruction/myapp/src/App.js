@@ -20,6 +20,7 @@ import BootstrapDynamic from "./components/11-bootstrap/bootstrap-dynamic";
 import BootstrapStatic from "./components/11-bootstrap/bootstrap-static";
 import Icon from "./components/12-icons/icon";
 import Events from "./components/13-events/events";
+import Shop from "./components/14-products/shop";
 
 const App = () => {
 
@@ -48,9 +49,10 @@ const App = () => {
         <BootstrapStatic/>
         <BootstrapDynamic/>
         <Icon/>
- */}
         <Events/>
+ */}
         
+        <Shop/>
     </div>
   );
 };
