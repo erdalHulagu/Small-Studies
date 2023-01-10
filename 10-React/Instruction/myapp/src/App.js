@@ -18,6 +18,8 @@ import Image from "./components/09-image/image";
 import ProfileCard from "./components/10-profile-card/profile-card";
 import BootstrapDynamic from "./components/11-bootstrap/bootstrap-dynamic";
 import BootstrapStatic from "./components/11-bootstrap/bootstrap-static";
+import Icon from "./components/12-icons/icon";
+import Events from "./components/13-events/events";
 
 const App = () => {
 
@@ -44,10 +46,11 @@ const App = () => {
         <Gallery/>
         <ProfileCard avatar="profile.jpg" name="Ali Gel" location="Turkey, Istanbul" shot="3" followers="23432" following="234"/>
         <BootstrapStatic/>
- */}
-    
         <BootstrapDynamic/>
-
+        <Icon/>
+ */}
+        <Events/>
+        
     </div>
   );
 };
