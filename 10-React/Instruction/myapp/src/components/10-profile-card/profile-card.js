@@ -6,7 +6,7 @@ const ProfileCard = (props) => {
   const { avatar, name, location, shot, followers, following } = props;
 
   const image = require(`../../assets/img/${avatar}`);
-  const profileBg = { backgroundImage: `url(${image})`};
+  const profileBg = { backgroundImage: `url(${image})` };
 
   return (
     <div className="profile-card">
