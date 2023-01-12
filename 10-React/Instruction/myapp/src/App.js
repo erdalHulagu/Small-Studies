@@ -62,7 +62,8 @@ const App = () => {
         <Counter/>
  */}
         
-        <Birthday/>
+         <Birthday/>
+
         
     </div>
   );
