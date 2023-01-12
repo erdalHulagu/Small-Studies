@@ -26,6 +26,7 @@ import State from "./components/15-usestate/state";
 import Stateless from "./components/15-usestate/stateless";
 import Counter from "./components/16-counter/counter";
 import Birthday from "./components/17-birthday/birthday";
+import UseEffect from "./components/18-useeffect/useeffect";
 
 const App = () => {
 
@@ -60,9 +61,10 @@ const App = () => {
         <Stateless/>
         <State/>
         <Counter/>
+        <Birthday/>
  */}
         
-         <Birthday/>
+         <UseEffect/>
 
         
     </div>
