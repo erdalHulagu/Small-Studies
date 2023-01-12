@@ -14,6 +14,14 @@ const UseEffect = ({id}) => {
             MOUNTING: Bu bölümdeki kodlar sadece render durumunda çalışır.
             Ancak re-render larda çalışmaz.
         `)
+
+        return ()=>{
+            console.log(`
+                UNMOUNTING: Bu bölüm component hafızadan atılmadan hemen önce çalıştırılır.
+            `)
+        }
+
+
     }, []);
 
     useEffect( ()=> {
