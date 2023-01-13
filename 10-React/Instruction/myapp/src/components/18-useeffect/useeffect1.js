@@ -5,6 +5,10 @@ const UseEffect1 = ({id}) => {
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
 
+    { /*  !!!!!STRICT MODE DEVREDEYKEN useEffect kodları ikişer defa çağrılaiblir.
+               ÇAĞRILMAMASI GEREKEN UNMOUNTING ÇAĞRILABILIR
+               STRICT MODE SADECE DEVLEOPMENT ORTAMINDA TESİRLİDİR !!!!!!!!! */}
+
 
     console.log(`Bu satır render ve re-render durumlarında ve 
     alttaki return kısmı render edilmeden önce çalıştırılır`);
