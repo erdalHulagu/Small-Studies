@@ -33,6 +33,8 @@ import CountryFilter from "./components/20-country-filter/country-filter";
 import Scroll from "./components/21-useref/scroll";
 import UseRef from "./components/21-useref/useref";
 import ClassComp from "./components/22-class-type-component/class-comp";
+import UserCards from "./components/23-fetch-users/user-cards";
+import Countries from "./components/24-axios-countries/countries";
 
 const App = () => {
 
@@ -74,11 +76,13 @@ const App = () => {
         <CountryFilter/>
         <UseRef/>
         <Scroll/>
+        <ClassComp/>
+        <UserCards/>
         
  */}
         
+        <Countries/>
         
-        <ClassComp/>
         
     </div>
   );
