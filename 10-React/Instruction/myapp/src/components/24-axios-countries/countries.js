@@ -11,17 +11,13 @@ const Countries = () => {
     try {
       const resp = await axios.get("https://restcountries.com/v3.1/all");
 
-      
-
-      console.log(Object.keys(resp.data[0].currencies));
-
-
-
       const arr = resp.data.map((item) => ({
         flag: item.flags.png,
         name: item.name.common,
         population: item.population,
-        capital: item.capital?.join("-")      }));
+        capital: item.capital?.join("-"),
+        currencies: item.currencies ? Object.keys(item.currencies).map( cur=> item.currencies[cur].name ).join("-") : ""
+      }));
 
       setCountries(arr);
     } catch (err) {
