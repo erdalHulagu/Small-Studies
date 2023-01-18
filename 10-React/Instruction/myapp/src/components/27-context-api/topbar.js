@@ -10,6 +10,9 @@ const Topbar = () => {
         return (1 / currencies[val]).toFixed(2);
      }
 
+    // alert(currencies.CAD);
+    // alert(currencies["CAD"]);
+
 
   return (
     <header className="exchange">
