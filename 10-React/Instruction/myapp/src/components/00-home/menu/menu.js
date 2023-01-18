@@ -1,20 +1,31 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Button, Collapse, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
+import menu from "./menu.json";
+import "./menu.scss";
 
-const Menu = () => {
+const Nenu = () => {
+  const [target, setTarget] = useState(null);
+
+  const handleCollapse = (e) => { 
+    e.target.classList.toggle("collapsed");
+   }
+
+  
   return (
     <nav>
-        <ul>
-            <li><Link to="/hello-world">Hello World</Link></li>
-            <li><Link to="/hello-react">Hello React</Link></li>
-            <li><Link to="/jsx1">JSX1</Link></li>
-            <li><Link to="/jsx2">JSX2</Link></li>
-            <li><Link to="/jsx3">JSX3</Link></li>
-            <li><Link to="/jsx4">JSX4</Link></li>
-            <li><Link to="/jsx5">JSX5</Link></li>
-        </ul>
-    </nav>
-  )
-}
+      <ul>
+        {
+          menu.map(mainItem=> <li key={mainItem.title} className={mainItem.children && "collapsable"}>
+            {mainItem.children ? <div  onClick={handleCollapse}>{mainItem.title}</div> : <div><Link to={mainItem.to}>{mainItem.title}</Link></div>}
 
-export default Menu
+            {mainItem.children && <ul>{mainItem.children.map(subItem=> <li key={subItem.title}><Link to={subItem.to}>{subItem.title}</Link></li> )}</ul>}
+          </li>)
+        }
+        
+      </ul>
+    </nav>
+  );
+};
+export default Nenu;
