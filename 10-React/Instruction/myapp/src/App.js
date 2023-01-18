@@ -71,14 +71,8 @@ const App = () => {
   
 
 
-  
-
-  
-
-
-
   return (
-    <StoreContext.Provider value={{counter, setCounter, currencies}}>
+    <StoreContext.Provider  value={{counter, setCounter, currencies}}>
       <BrowserRouter>
         <Header />
         <Container fluid>

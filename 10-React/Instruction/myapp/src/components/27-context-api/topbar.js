@@ -4,7 +4,7 @@ import "./topbar.scss";
 
 const Topbar = () => {
     const store = useContext(StoreContext);
-    const { currencies } = store;
+    const { currencies, counter} = store;
 
     const formatCurrency = (val) => { 
         return (1 / currencies[val]).toFixed(2);
