@@ -2,4 +2,17 @@
     background-color: aquamarine;
     padding: 1rem;
     color: darkblue;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > div{
+            display: flex;
+            gap:2rem;
+        }
+    }
+
+
 }
