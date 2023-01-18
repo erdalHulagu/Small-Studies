@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { useContext } from "react";
+import StoreContext from "../../store";
+import Content from "./content";
+import Topbar from "./topbar";
 
 const Exchange = () => {
-  return (
-    <div>Exchange</div>
-  )
-}
+  const store = useContext(StoreContext);
 
-export default Exchange
+  return (
+    <div>
+      <Topbar />
+      <Content />
+    </div>
+  );
+};
+
+export default Exchange;

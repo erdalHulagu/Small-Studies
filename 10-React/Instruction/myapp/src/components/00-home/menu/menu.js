@@ -13,7 +13,7 @@ const Nenu = () => {
   };
 
   return (
-    <nav>
+    <nav className="main-nav">
       <ul>
         {menu.map((mainItem) => (
           <li
