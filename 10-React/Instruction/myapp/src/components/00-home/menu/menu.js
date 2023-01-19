@@ -6,7 +6,6 @@ import menu from "./menu.json";
 import "./menu.scss";
 
 const Menu = () => {
-  const [target, setTarget] = useState(null);
 
   const handleCollapse = (e) => {
     e.target.classList.toggle("collapsed");
