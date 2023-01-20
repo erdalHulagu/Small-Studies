@@ -1,13 +1,13 @@
 import React from 'react'
-import HomePage from './pages/home-page'
-import Router from './router'
+import AppRouter from './router'
 import { StoreProvider } from './store'
+
 
 const App = () => {
   
   return (
     <StoreProvider>
-      <Router/>
+      <AppRouter/>
     </StoreProvider>
   )
 }
