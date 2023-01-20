@@ -12,7 +12,7 @@ const HomePage = () => {
 
   const handleLogout = () => { 
     
-    const result = window.confirm("Are you sure to logout?");
+    let result = window.confirm("Are you sure to logout?");
     if(!result) return;
 
     dispatchAuth(logout());
