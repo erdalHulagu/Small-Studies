@@ -18,11 +18,11 @@ const navigate = useNavigate();
 
   const onSubmit = (values) => {
       setLoading(true);
-
+      console.log(values)
       setTimeout(() => {
           setLoading(false);
           alert("Giriş başarılı");
-          navigate("/")
+          navigate("/");
       }, 2000);
   };
 
@@ -31,6 +31,7 @@ const navigate = useNavigate();
     validationSchema,
     onSubmit,
   });
+
   return (
     <Card style={{ width: "24rem", margin: "2rem auto" }}>
       <Card.Body>
@@ -43,17 +44,17 @@ const navigate = useNavigate();
               isInvalid={formik.errors.ssn && formik.touched.ssn}
               isValid={!formik.errors.ssn && formik.touched.ssn}
             />
-            <Form.Control.Feedback>{formik.errors.ssn}</Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">{formik.errors.ssn}</Form.Control.Feedback>
           </Form.Group>
           <Form.Group className="mb-3">
-            <Form.Label>SSN</Form.Label>
+            <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
               {...formik.getFieldProps("password")}
               isInvalid={formik.errors.password && formik.touched.password}
               isValid={!formik.errors.password && formik.touched.password}
             />
-            <Form.Control.Feedback>{formik.errors.ssn}</Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">{formik.errors.password}</Form.Control.Feedback>
           </Form.Group>
           <Button type="submit" disabled={loading}>{loading && <Spinner animation="border"/>}{" "}Login</Button>
         </Form>
