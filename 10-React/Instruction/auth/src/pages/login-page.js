@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Button, Container, Form, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "../store";
-import { loginSuccess } from "../store/auth/auth-actions";
+import { loginFail, loginSuccess } from "../store/auth/auth-actions";
 
 const API_BASE_URL = "https://carrental-v3-backend.herokuapp.com";
 
@@ -11,7 +11,7 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const {dispatchAuth} = useStore();
+  const { dispatchAuth } = useStore();
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -19,7 +19,7 @@ const LoginPage = () => {
     const payload = { email, password };
 
     try {
-        setLoading(true);
+      setLoading(true);
       const respAuth = await axios.post(`${API_BASE_URL}/login`, payload);
       const token = respAuth.data.token;
 
@@ -30,14 +30,13 @@ const LoginPage = () => {
 
       //dispatchAuth({type: "LOGIN_SUCCESS", payload: respUser.data});
       dispatchAuth(loginSuccess(respUser.data));
-      
-      navigate("/");
 
+      navigate("/");
     } catch (err) {
       alert(err.response.data.message);
-    }
-    finally{
-        setLoading(false);
+      dispatchAuth(loginFail());
+    } finally {
+      setLoading(false);
     }
   };
 
