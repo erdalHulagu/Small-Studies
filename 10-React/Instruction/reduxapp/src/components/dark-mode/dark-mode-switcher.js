@@ -12,7 +12,7 @@ const DarkModeSwitcher = () => {
       <Form.Check
         type="switch"
         id="dmSwitch"
-        label="Dark Mode"
+        label={darkMode ? "Light Mode" : "Dark Mode"}
         checked={darkMode}
         onChange={ ()=>  dispatch(setDarkMode(!darkMode))}
       />
