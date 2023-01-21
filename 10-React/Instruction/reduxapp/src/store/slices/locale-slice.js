@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { langs } from "../../helpers/locale-helper";
 
 
 export const localeSlice = createSlice({
     name: "locale",
     initialState:{
-        lang: "en",
+        lang: { title: "English", code: "en", country: "gb" },
         currency: "usd"
     },
     reducers:{
