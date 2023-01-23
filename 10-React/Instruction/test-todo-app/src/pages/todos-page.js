@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from "react";
 import { Container } from "reactstrap";
-import TodoHeader from "../components/todo-header/todo-header";
 import TodoInput from "../components/todo-input/todo-input";
 import TodoList from "../components/todo-list/todo-list";
 import TodoStatus from "../components/todo-status/todo-status";
