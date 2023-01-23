@@ -1,0 +1,42 @@
+.todo-list{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 0;
+    margin:2rem 0;
+    list-style: none;
+}
+
+.todo-list li{
+    background-color: #ececec;
+    padding: 1rem;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.todo-list li:first-child{
+    border-radius:1rem 1rem 0 0;
+}
+
+.todo-list li:last-child{
+    border-radius:0 0 1rem 1rem;
+}
+
+
+.todo-list li.completed{
+    background-color: rgb(197, 251, 189);
+    text-decoration: line-through;
+}
+
+.todo-list li .del{
+    position: absolute;
+    top:50%;
+    right:15px;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+.todo-list li:hover .del{
+    display: inline;
+}
+
